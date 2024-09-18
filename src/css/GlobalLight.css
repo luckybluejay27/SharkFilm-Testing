@@ -1,0 +1,61 @@
+/* Global Variables */
+:root {
+  --PageLight: #f9e5df;
+  --TextLight: #254884;
+  /* For strong or emphasized words inside lines */
+  --Highlight-Light: #000100;
+  /* When denoting text inside significant containers such as tables */
+  --Tables-Light: #6ed7cd;
+  /* Vector Colours */
+  --SVG-Light: #000000;
+  /* Rest is Self Explanatory */
+  --SurfaceLight: #fab5b5;
+  --LinkLight: #03bb8d;
+}
+body {
+  background-color: var(--PageDark);
+}
+Font1 {
+  color: var(--TextDark);
+  font-size: 5vw;
+  font-family: Shrikhand;
+}
+Font2 {
+  color: var(--TextDark);
+  font-size: 4vw;
+  font-family: Concert One;
+}
+Font3 {
+  color: var(--TextDark);
+  font-size: 3vw;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 700;
+  filter: invert();
+}
+Tables {
+  color: #093d0d;
+  background-color: var(--Tables-Dark);
+  font-size: 3vw;
+  display: inline-table;
+  width: 90%;
+}
+Surface {
+  background-color: var(--SurfaceDark);
+  display: inline-block;
+  width: 80%;
+}
+.Link {
+  color: var(--LinkDark);
+  text-decoration: underline;
+  font-weight: 900;
+  letter-spacing: 0.1vw;
+}
+.Link:hover {
+  font-style: italic;
+  font-weight: 500;
+  letter-spacing: 0.2vw;
+}
+.HighDarks {
+  background-color: var(--HighDark-Dark);
+  filter: saturate(100) invert();
+}
