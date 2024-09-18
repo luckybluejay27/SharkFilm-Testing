@@ -2,18 +2,19 @@
   <div id="app">
     <!-- Your app starts here -->
     <HomeView />
-    <StickyPrimeNav />
+    <HomeNav />
   </div>
 </template>
 
 <script>
 import { defineComponent } from "vue";
-import StickyPrimeNav from "./components/StickyPrimeNav.vue";
+import HomeNav from "./components/HomeNav.vue";
 import HomeView from "./views/HomeView.vue";
+import "../src/css/GlobalDark.css";
 
 export default defineComponent({
   name: "App",
-  components: { HomeView, StickyPrimeNav },
+  components: { HomeView, HomeNav },
 });
 //import css
 import "../src/css/GlobalDark.css";
