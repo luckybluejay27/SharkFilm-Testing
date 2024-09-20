@@ -1,13 +1,14 @@
 <template>
   <ul class="HomeNav">
     <!-- Turn below into working Router Links -->
-    <!-- Where do Const Routes go?-->
-    <li><a href="#HomeView.vue">Home</a></li>
-    <li><a href="#CommsPage.vue">Commissions</a></li>
-    <li><a href="#SupportView">Support</a></li>
-    <li><a href="#Portfolio.vue">Portfolio</a></li>
-    <li><a href="#library.vue">Library</a></li>
-    <li><a href="#Login.vue">Login</a></li>
+    <ul>
+      <li><RouterLink to="/">Home</RouterLink></li>
+      <li><RouterLink to="/CommsPage.vue">Commissions</RouterLink></li>
+      <li><RouterLink to="/Library.vue">Library</RouterLink></li>
+      <li><RouterLink to="/SupportView.vue">Support</RouterLink></li>
+      <li><RouterLink to="/Login.vue">Login</RouterLink></li>
+      <li><RouterLink to="/PortfolioView.vue">Portfolio</RouterLink></li>
+    </ul>
   </ul>
 </template>
 
