@@ -84,56 +84,66 @@ Surface {
   filter: saturate(100) invert();
 }
 
-/* FlexBoxes and Special Containers */
-.SharkTitleBox {
+/* Titles and Containers */
+.SharkTitleContainer {
   position: absolute;
-  font-family: "Shrikhand";
-  font-size: 700%;
-  
-  left: 50%;
-  top: 50%;
-  transform: translate(-40%, -40%);
+  display: flex;
+  align-items: center;
+  flex-direction: row;
 
+  left: 50%;
+  top: 49%;
+  transform: translate(-50%, -50%);
   margin: 0 auto;
   text-align: center;
-  
-  
-  SmallTitle {
-    position: inherit;
-    font-size: 20%;
-    transform: translate(-110%, 70%);
-  }
 
-  .finVector {
-    position: fixed;
-    transform: translate(-390%, 50%);
-
-    height: 23.6%;
-    width: 9%;
-    filter: brightness(0) saturate(100%) invert(38%) sepia(16%) saturate(812%) hue-rotate(131deg) brightness(92%) contrast(88%);
-  }
+  font-size: 600%;
+  font-family: "Shrikhand", serif;
 }
 
-/* Home Nav Componenet */
+BigTitle{
+  font-family: inherit;
+}
+SmallTitle{
+  font-family: inherit;
+  position: absolute;
+  font-size: 25%;
+  top: 13%;
+  left: 84%;
+}
+.FinSVG {
+  position: absolute;
+  top: 25%;
+  left: 53%;
+  height: 47%;
+  width: 10.5%;
+
+  filter: brightness(0) saturate(100%) invert(38%) sepia(16%) saturate(812%) hue-rotate(131deg) brightness(92%) contrast(88%);
+}
 
 .HomeNav {
-  position: sticky;
+  position: absolute;
   display: inline-flex;
-  font-family: "Concert One";
-  font-size: 15%;
+  align-items: center;
+  flex-direction: row;
 
-  transform: translate(-10%, -500%);
-
-  margin: 0 auto;
+  left: -20%;
+  top: 90%;
+  margin: 0%;
   text-align: center;
+  
+  font-size: 25%;
+  font-family: "Concert One";
 
-  text-decoration: none;
   list-style-type: none;
-
-
-}
-.HomeNav > li > a {
-  padding: 1rem;
-  text-decoration: none;
-  color: var(--SVG-Dark);
+  
+  li > a {
+    padding: 1rem;
+    color: var(--SVG-Dark);
+    text-decoration: none;
+  }
+  li > a:hover {
+    font-weight: 900;
+    cursor: pointer;
+  }
 }
