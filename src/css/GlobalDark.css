@@ -66,6 +66,7 @@ Surface {
   display: inline-block;
   width: 80%;
 }
+
 /* Interaction */
 .Link {
   color: var(--LinkDark);
@@ -73,13 +74,11 @@ Surface {
   font-weight: 900;
   letter-spacing: 0.1vw;
 }
-
 .Link:hover {
   font-style: italic;
   font-weight: 500;
   letter-spacing: 0.2vw;
 }
-
 .HighDarks {
   background-color: var(--HighDark-Dark);
   filter: saturate(100) invert();
@@ -87,69 +86,54 @@ Surface {
 
 /* FlexBoxes and Special Containers */
 .SharkTitleBox {
-  display: flex;
-  position: sticky;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
+  position: absolute;
   font-family: "Shrikhand";
-  font-size: 7rem;
-  margin-left: 10%;
-  padding-top: 20%;
+  font-size: 700%;
+  
+  left: 50%;
+  top: 50%;
+  transform: translate(-40%, -40%);
 
-  @media (orientation: portrait) {
-    margin-top: -50%;
-    padding-top: 50%;
-    padding-left: 5%;
-  }
-
-  height: 100%;
-  width: 85%;
-
+  margin: 0 auto;
+  text-align: center;
+  
+  
   SmallTitle {
-    position: relative;
-    font-size: 1.5rem;
-    transform: translate(-6.5rem, -2.5rem);
+    position: inherit;
+    font-size: 20%;
+    transform: translate(-110%, 70%);
   }
 
   .finVector {
-    position: relative;
-    transform: translate(-25rem, -0.2rem);
-    height: 4.7rem;
-    width: 4.2rem;
+    position: fixed;
+    transform: translate(-390%, 50%);
+
+    height: 23.6%;
+    width: 9%;
+    filter: brightness(0) saturate(100%) invert(38%) sepia(16%) saturate(812%) hue-rotate(131deg) brightness(92%) contrast(88%);
   }
 }
+
+/* Home Nav Componenet */
+
 .HomeNav {
-  position: absolute;
-  list-style: none;
+  position: sticky;
   display: inline-flex;
-  transform: translate(45%, -50%);
-  color: var(--SVG-Dark);
-  text-shadow: 0.5vh 0.1vw 1vh #141414;
-  font-family: 'Concert One', serif;
-  letter-spacing: 0.1rem;
-}
+  font-family: "Concert One";
+  font-size: 15%;
 
-.HomeNav ul {
-  display: flex;
-  justify-content: space-between;
-}
+  transform: translate(-10%, -500%);
 
-.HomeNav li {
-  flex: 10;
-  padding: 2rem;
-  box-sizing:content-box;
-}
+  margin: 0 auto;
+  text-align: center;
 
-
-li {
   text-decoration: none;
-  font-weight: 900;
-}
+  list-style-type: none;
 
-.HomeNav li:hover {
-  font-size: 1.05rem;
-  font-style: normal;
-  font-weight:100;
-  margin-left: -0.2rem;
+
+}
+.HomeNav > li > a {
+  padding: 1rem;
+  text-decoration: none;
+  color: var(--SVG-Dark);
 }

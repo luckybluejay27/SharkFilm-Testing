@@ -1,11 +1,13 @@
 <template>
   <ul class="HomeNav">
-    <li><a hli="#HomeView">Home</a></li>
-    <li><a hli="#Commsli">Commissions</a></li>
-    <li><a hli="#SupportView">Support</a></li>
-    <li><a hli="#Portfolio">Portfolio</a></li>
-    <li><a hli="#library">Library</a></li>
-    <li><a hli="#Login">Login</a></li>
+    <!-- Turn below into working Router Links -->
+    <!-- Where do Const Routes go?-->
+    <li><a href="#HomeView.vue">Home</a></li>
+    <li><a href="#CommsPage.vue">Commissions</a></li>
+    <li><a href="#SupportView">Support</a></li>
+    <li><a href="#Portfolio.vue">Portfolio</a></li>
+    <li><a href="#library.vue">Library</a></li>
+    <li><a href="#Login.vue">Login</a></li>
   </ul>
 </template>
 
