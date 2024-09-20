@@ -1,65 +1,40 @@
 <template>
   <ul class="HomeNav">
-    <!-- Turn below into working Router Links -->
-    <ul>
-      <li><RouterLink :to="{ name: 'HomeView' }"></RouterLink>Home</li>
-      <li><RouterLink :to="{ name: 'CommsPage' }"></RouterLink>Commissions</li>
-      <li><RouterLink :to="{ name: 'Library' }"></RouterLink>Library</li>
-      <li><RouterLink :to="{ name: 'Login' }"></RouterLink>Login</li>
-      <li><RouterLink :to="{ name: 'Portfolio' }"></RouterLink>Portfolio</li>
-      <li><RouterLink :to="{ name: 'SupportView' }"></RouterLink>Fundingt</li>
-    </ul>
+    <li><RouterLink :to="{ name: 'Comms' }">Comms Page</RouterLink></li>
+    <li><RouterLink :to="{ name: 'Home' }">Home View</RouterLink></li>
+    <li><RouterLink :to="{ name: 'Library' }">Library</RouterLink></li>
+    <li><RouterLink :to="{ name: 'Login' }">Login</RouterLink></li>
+    <li><RouterLink :to="{ name: 'Portfolio' }">Portfolio</RouterLink></li>
+    <li><RouterLink :to="{ name: 'Support' }">Support View</RouterLink></li>
   </ul>
 </template>
 
 <script>
-import { createApp } from "vue";
-import App from "../App.vue";
 import { createRouter, createWebHashHistory } from "vue-router";
 import HomeView from "@/views/HomeView.vue";
 import CommsPage from "@/views/CommsPage.vue";
 import Library from "@/views/Library.vue";
-import SupportView from "@/views/SupportView.vue";
 import Login from "@/views/Login.vue";
-import PortfolioView from "@/views/Portfolio.vue";
+import Portfolio from "@/views/Portfolio.vue";
+import SupportView from "@/views/SupportView.vue";
+
+const routes = [
+  { path: "/", name: "Home", component: HomeView },
+  { path: "/comms", name: "Comms", component: CommsPage },
+  { path: "/library", name: "Library", component: Library },
+  { path: "/login", name: "Login", component: Login },
+  { path: "/portfolio", name: "Portfolio", component: Portfolio },
+  { path: "/support", name: "Support", component: SupportView },
+];
 
 const router = createRouter({
   history: createWebHashHistory(),
-  routes: [
-    {
-      path: "/",
-      name: "HomeView",
-      component: HomeView,
-    },
-    {
-      path: "/CommsPage.vue",
-      name: "CommsPage",
-      component: CommsPage,
-    },
-    {
-      path: "/Library.vue",
-      name: "Library",
-      component: Library,
-    },
-    {
-      path: "/Login.vue",
-      name: "Login",
-      component: Login,
-    },
-    {
-      path: "/Portfolio.vue",
-      name: "Portfolio",
-      component: PortfolioView,
-    },
-    {
-      path: "/SupportView.vue",
-      name: "SupportView",
-      component: SupportView,
-    },
-  ],
+  routes,
 });
-createApp(App).use(router).mount("#app");
+
 export default router;
 </script>
 
-<style></style>
+<style>
+/* Add your CSS styles here */
+</style>
