@@ -1,20 +1,12 @@
 <template>
   <div id="app">
     <!-- Your app starts here -->
-    <HomeView />
-    <router-view />
+    <SharkLogo />
   </div>
 </template>
 
 <script>
-import { defineComponent } from "vue";
-import HomeView from "./views/HomeView.vue";
-import "../src/css/GlobalDark.css";
+// import GlobalDark.css
+  import './styles/GlobalDark.css'
 
-export default defineComponent({
-  name: "App",
-  components: { HomeView },
-});
-//import css
-import "../src/css/GlobalDark.css";
 </script>

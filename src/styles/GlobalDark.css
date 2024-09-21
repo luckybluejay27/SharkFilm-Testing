@@ -16,16 +16,16 @@
   /* Font Import */
   /* ShirkHand */
   .shrikhand-regular {
-    font-family: "Shrikhand", serif;
+    font-family: "Shrikhand", system-ui;
     font-weight: 400;
     font-style: normal;
-  }
+  }  
   /* Concerto */
   .concert-one-regular {
-    font-family: "Concert One", sans-serif;
+    font-family: "Concert One", system-ui;
     font-weight: 400;
     font-style: normal;
-  }
+  }  
 }
 
 /* Typography */
@@ -99,6 +99,7 @@ Surface {
 
   font-size: 600%;
   font-family: "Shrikhand", serif;
+  color: var(--TitleColor);
 }
 
 BigTitle{
@@ -127,7 +128,7 @@ SmallTitle{
   align-items: center;
   flex-direction: row;
 
-  left: -15%;
+  left: -10%;
   top: 90%;
   margin: 0%;
   text-align: center;

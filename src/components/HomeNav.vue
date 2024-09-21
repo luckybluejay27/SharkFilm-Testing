@@ -1,6 +1,6 @@
 <template>
   <ul class="HomeNav">
-    <li><a href="#/HomeView">Home</a></li>
+    <li><a href="#/">Home</a></li>
     <li><a href="#/CommsPage">Commissions</a></li>
     <li><a href="#/Library">Library</a></li>
     <li><a href="#/Login">Login</a></li>
@@ -10,9 +10,9 @@
 </template>
 
 <script>
-export default {
-  name: "HomeNav",
-};
+  export default {
+    name: 'HomeNav',
+  }
 </script>
 
 <style>
