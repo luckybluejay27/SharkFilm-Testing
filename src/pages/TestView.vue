@@ -6,8 +6,8 @@
   </div>
 </template>
 
-  <script>
+<script>
   export default {
     name: 'TestView',
   }
-  </script>
+</script>
