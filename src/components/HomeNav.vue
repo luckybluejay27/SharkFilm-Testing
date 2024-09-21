@@ -1,20 +1,12 @@
 <template>
-  <ul class="HomeNav">
-    <li><a href="#/">Home</a></li>
-    <li><a href="#/CommsPage">Commissions</a></li>
-    <li><a href="#/Library">Library</a></li>
-    <li><a href="#/Login">Login</a></li>
-    <li><a href="#/Portfolio">Portfolio</a></li>
-    <li><a href="#/SupportView">Support</a></li>
-  </ul>
+  <div>
+    <div ref="HomeNav" class="HomeNav">
+      <ul>
+        <li><router-link to="/TestView">Test</router-link></li>
+      </ul>
+    </div>
+  </div>
 </template>
 
 <script>
-  export default {
-    name: 'HomeNav',
-  }
 </script>
-
-<style>
-/* Add your CSS styles here */
-</style>

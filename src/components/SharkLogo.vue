@@ -1,6 +1,5 @@
 <template>
   <div class="SharkTitleContainer">
-    <HomeNav />
     <div class="SharkTitle">
       <BigTitle>SharkFilm</BigTitle>
       <SmallTitle>Studio</SmallTitle>
@@ -9,4 +8,5 @@
   </div>
 </template>
 
-<script></script>
+<script>
+</script>
