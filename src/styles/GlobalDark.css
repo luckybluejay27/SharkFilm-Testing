@@ -72,4 +72,16 @@ Surface {
   transform: translate(-50%, -50%);
   transform-origin: 50% 50%;
 }
+.Navigation{
+  background-color: var(--SurfaceDark);
+}
+.Navigation > ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(0, 1fr));
+  gap: 1vw;
+}
+.Navigation > li {
+  margin-right: 0.5vh;
+  float: left;
+  }
 }

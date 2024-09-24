@@ -1,9 +1,15 @@
 <template>
-  <div>
-    <router-link to="/">Home</router-link>
-    <router-link to="/TestView">Test</router-link>
+  <div class="Navigation">
+    <ul>
+      <li><router-link to="/">Home</router-link></li>
+      <li><router-link to="/CommissionsView">Commissions</router-link></li>
+      <li><router-link to="/SupportView">Support Us</router-link></li>
+      <li><router-link to="/LoginView">Login</router-link></li>
+      <li><router-link to="/LibraryView">Library</router-link></li>
+      <li><router-link to="/PortfolioView">Portfolio</router-link></li>
+    </ul>
+    <router-view />
   </div>
-  <router-view />
 </template>
 
   <script>
@@ -13,8 +19,11 @@
       return {
         routes: [
           { name: 'Home', path: '/' },
-          { name: 'Test', path: '/TestView' },
-        // Add more routes here as needed
+          { name: 'SupportView', path: '/SupportView' },
+          { name: 'LoginView', path: '/LoginView' },
+          { name: 'LibraryView', path: '/LibraryView' },
+          { name: 'PortfolioView', path: '/PortfolioView' },
+          { name: 'CommissionsView', path: '/CommissionsView' },
         ],
       }
     },
