@@ -1,9 +1,17 @@
 <template>
-  <SharkLogo />
+  <div id="app">
+    <!-- Your app content here -->
+    <Navigation />
+    <RouterLink />
+  </div>
 </template>
 
-<script lang="ts" setup>
-  import './styles/GlobalDark.css'
-  import './assets/fonts/Shrikhand-Regular.ttf'
-  import SharkLogo from './components/SharkLogo.vue'
+<script>
+  import Navigation from './components/Navigation.vue'
+  export default {
+    name: 'App',
+    components: {
+      Navigation,
+    },
+  }
 </script>

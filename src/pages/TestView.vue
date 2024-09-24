@@ -1,13 +1,16 @@
 <template>
   <div>
-    <div>
-      <SmallTitle>Yay You Made It</SmallTitle>
-    </div>
+    <!-- Your TestView content here -->
+    <h1>This is the Test View</h1>
   </div>
 </template>
 
-<script>
+  <script>
   export default {
     name: 'TestView',
   }
-</script>
+  </script>
+
+  <style>
+  /* Your styles here */
+  </style>

@@ -1,7 +1,20 @@
 <template>
-  <HelloWorld />
+  <div>
+    <SharkLogo />
+  </div>
 </template>
 
-<script lang="ts" setup>
-//
-</script>
+  <script>
+  import SharkLogo from '@/components/SharkLogo.vue'
+
+  export default {
+    name: 'Index',
+    components: {
+      SharkLogo,
+    },
+  }
+  </script>
+
+  <style>
+  /* Your styles here */
+  </style>

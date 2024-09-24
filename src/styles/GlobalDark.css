@@ -14,12 +14,6 @@
   --LinkDark: #69cdff;
   --TitleColor: #141414;
 /* Typography */
-@font-face {
-  font-family: "Shrikhand";
-  src: url("./assets/fonts/Shrikhand-Regular.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
 /* Main Body */
 body {
   background-color: var(--PageDark);
@@ -28,13 +22,12 @@ body {
 Font1 {
   color: var(--TextDark);
   font-size: 5vw;
-  font-family: "Shrikhand", serif;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 Font2 {
   color: var(--TextDark);
   font-size: 4vw;
-  font-family: "Concert One", serif;
 }
 
 Font3 {
@@ -42,7 +35,6 @@ Font3 {
   font-size: 3vw;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-weight: 700;
-  filter: invert();
 }
 
 Tables {
@@ -50,13 +42,11 @@ Tables {
   background-color: var(--Tables-Dark);
   font-size: 3vw;
   display: inline-table;
-  width: 90%;
 }
 
 Surface {
   background-color: var(--SurfaceDark);
   display: inline-block;
-  width: 80%;
 }
 
 /* Interaction */
@@ -75,41 +65,11 @@ Surface {
   background-color: var(--HighDark-Dark);
   filter: saturate(100) invert();
 }
-
-/* Titles and Containers */
-.SharkTitleContainer {
-  font-family: "Shrikhand", serif;
-  font-size: 600%;
-  color: var(--TitleColor);
-
+.SharkSplash {
   position: absolute;
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-
+  top: 50%;
   left: 50%;
-  top: 49%;
   transform: translate(-50%, -50%);
-  margin: 0 auto;
-  text-align: center;
-}
-BigTitle {
-  font-family: inherit;
-}
-SmallTitle {
-  position: absolute;
-  font-size: 25%;
-  top: 13%;
-  left: 84%;
-}
-.FinSVG {
-  position: absolute;
-  top: 25%;
-  left: 53%;
-  height: 47%;
-  width: 10.5%;
-
-  filter: brightness(0) saturate(100%) invert(38%) sepia(16%) saturate(812%)
-    hue-rotate(131deg) brightness(92%) contrast(88%);
+  transform-origin: 50% 50%;
 }
 }
