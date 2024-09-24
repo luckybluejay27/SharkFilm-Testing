@@ -1,7 +1,7 @@
 <template>
   <div>
     <div>
-      <SmallTitle>TestView</SmallTitle>
+      <SmallTitle>Yay You Made It</SmallTitle>
     </div>
   </div>
 </template>

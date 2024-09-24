@@ -1,24 +1,23 @@
 <template>
   <div id="app">
-    <!-- Your app starts here -->
     <div>
-      <SharkLogo />
-      <HomeNav />
+      <!-- <SharkLogo /> -->
+      <NavComponent />
+      <router-view />
     </div>
 
   </div>
 </template>
 
 <script>
-  import SharkLogo from './components/SharkLogo.vue'
+  // import SharkLogo from './components/SharkLogo.vue'
   import './styles/GlobalDark.css'
-  import HomeNav from './components/HomeNav.vue'
+  import NavComponent from './components/NavComponent.vue'
 
   export default {
     name: 'SharkLogo',
     components: {
-      SharkLogo,
-      HomeNav,
+      // SharkLogo,
     },
   }
 </script>
