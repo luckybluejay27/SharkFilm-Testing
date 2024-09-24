@@ -1,23 +1,9 @@
 <template>
-  <div id="app">
-    <div>
-      <!-- <SharkLogo /> -->
-      <NavComponent />
-      <router-view />
-    </div>
-
-  </div>
+  <SharkLogo />
 </template>
 
-<script>
-  // import SharkLogo from './components/SharkLogo.vue'
+<script lang="ts" setup>
   import './styles/GlobalDark.css'
-  import NavComponent from './components/NavComponent.vue'
-
-  export default {
-    name: 'SharkLogo',
-    components: {
-      // SharkLogo,
-    },
-  }
+  import './assets/fonts/Shrikhand-Regular.ttf'
+  import SharkLogo from './components/SharkLogo.vue'
 </script>

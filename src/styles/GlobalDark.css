@@ -13,22 +13,14 @@
   --SurfaceDark: #115c17;
   --LinkDark: #69cdff;
   --TitleColor: #141414;
-  /* Font Import */
-  /* ShirkHand */
-  .shrikhand-regular {
-    font-family: "Shrikhand", system-ui;
-    font-weight: 400;
-    font-style: normal;
-  }  
-  /* Concerto */
-  .concert-one-regular {
-    font-family: "Concert One", system-ui;
-    font-weight: 400;
-    font-style: normal;
-  }  
-}
-
 /* Typography */
+@font-face {
+  font-family: "Shrikhand";
+  src: url("./assets/fonts/Shrikhand-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+/* Main Body */
 body {
   background-color: var(--PageDark);
 }
@@ -86,6 +78,10 @@ Surface {
 
 /* Titles and Containers */
 .SharkTitleContainer {
+  font-family: "Shrikhand", serif;
+  font-size: 600%;
+  color: var(--TitleColor);
+
   position: absolute;
   display: flex;
   align-items: center;
@@ -96,17 +92,11 @@ Surface {
   transform: translate(-50%, -50%);
   margin: 0 auto;
   text-align: center;
-
-  font-size: 600%;
-  font-family: "Shrikhand", serif;
-  color: var(--TitleColor);
 }
-
-BigTitle{
+BigTitle {
   font-family: inherit;
 }
-SmallTitle{
-  font-family: inherit;
+SmallTitle {
   position: absolute;
   font-size: 25%;
   top: 13%;
@@ -119,38 +109,7 @@ SmallTitle{
   height: 47%;
   width: 10.5%;
 
-  filter: brightness(0) saturate(100%) invert(38%) sepia(16%) saturate(812%) hue-rotate(131deg) brightness(92%) contrast(88%);
+  filter: brightness(0) saturate(100%) invert(38%) sepia(16%) saturate(812%)
+    hue-rotate(131deg) brightness(92%) contrast(88%);
 }
-
-.HomeNav {
-  position: absolute;
-  display: inline-flex;
-  align-items: center;
-  flex-direction: row;
-
-  left: 50%;
-  top: 55%;
-  margin: 0%;
-  text-align: center;
-  
-  font-size: 100%;
-  font-family: "Concert One";
-
-  list-style-type: none;
-}
-
-ul {
-  list-style: none;
-  cursor: pointer;
-  display: inline-flex;
-  
-  li > a {
-    text-decoration: none;
-    color: var(--SVG-Dark);
-    margin-right: 0.5em;
-    margin-left: 0.5em;
-  }
-  li > a:hover {
-    text-decoration: underline;
-  }
 }

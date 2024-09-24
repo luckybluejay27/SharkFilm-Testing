@@ -5,8 +5,12 @@
       <SmallTitle>Studio</SmallTitle>
       <img class="FinSVG" src="../assets/FinVector.svg">
     </div>
+    <HomeNav />
   </div>
 </template>
 
 <script>
+  export default {
+    name: 'SharkLogo',
+  }
 </script>
