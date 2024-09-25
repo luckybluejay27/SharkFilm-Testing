@@ -1,0 +1,39 @@
+.Navigation{
+  font-size: 2.5vh;
+  font-family: 'ConcertOne', serif;
+  max-height: 5vh;
+  flex-basis: 10vh;
+  background-color: var(--SurfaceDark);
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+.Navigation > ul {
+  font-family: inherit;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1vw;
+  grid-template-columns: repeat(auto-fill, minmax(0, 1fr));
+  list-style-type: none;
+  text-decoration: none;
+  background-color: var(--SurfaceDark);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.Navigation > li {
+  margin-right: 0.5vh;
+  float: left;
+  padding: 10vw;
+  font-family: inherit;
+  
+  }
+  .router {
+    text-decoration: none;
+    font-family: inherit;
+    padding-left: 1em;
+    color: var(--TextDark);
+  }
+  .router:hover {
+    text-decoration: underline;
+    font-style: italic;
+    font-size: 105%;
+  }

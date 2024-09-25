@@ -26,53 +26,18 @@
 body {
   background-color: var(--PageDark);
 }
-
-Font1 {
+h1 {
+  position: absolute;
+  top: 10vh; /* stay beneath the first 10% of the viewport's height */
+  left: 1em; /* 1em margin from the left corner */
+  font-size: 3vh; /* relative to the root element */
+  font-family: 'Times New Roman', serif;
   color: var(--TextDark);
-  font-size: 5vw;
-  font-family: 'Times New Roman', Times, serif;
+  text-align: left; /* word wrapped and listed left to right, top to bottom */
+  width: calc(100% - 2em); /* take up the full width minus the 1em margin on both sides */
 }
 
-Font2 {
-  color: var(--TextDark);
-  font-size: 4vw;
-}
-
-Font3 {
-  color: var(--TextDark);
-  font-size: 3vw;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-weight: 700;
-}
-
-Tables {
-  color: #093d0d;
-  background-color: var(--Tables-Dark);
-  font-size: 3vw;
-  display: inline-table;
-}
-
-Surface {
-  background-color: var(--SurfaceDark);
-  display: inline-block;
-}
-
-/* Interaction */
-.Link {
-  color: var(--LinkDark);
-  text-decoration: underline;
-  font-weight: 900;
-  letter-spacing: 0.1vw;
-}
-.Link:hover {
-  font-style: italic;
-  font-weight: 500;
-  letter-spacing: 0.2vw;
-}
-.HighDarks {
-  background-color: var(--HighDark-Dark);
-  filter: saturate(100) invert();
-}
+/* Containers */
 .SharkSplash {
   position: absolute;
   top: 50%;
@@ -80,32 +45,51 @@ Surface {
   transform: translate(-50%, -50%);
   transform-origin: 50% 50%;
 }
-.Navigation{
-  font-size: 100%;
+.Navigation {
   font-family: 'ConcertOne', serif;
-}
-.Navigation > ul {
-  font-family: inherit;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1vw;
-  grid-template-columns: repeat(auto-fill, minmax(0, 1fr));
-  list-style-type: none;
-  text-decoration: none;
   background-color: var(--SurfaceDark);
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  height: 6vh; /* lock the height to 9vh */
+  display: flex; /* make the navigation items display in a row */
+  flex-wrap: wrap; /* allow the items to wrap to the next line if needed */
+  justify-content: space-between; /* distribute the items evenly across the width */
 }
-.Navigation > li {
-  margin-right: 0.5vh;
-  float: left;
-  padding: 10vw;
-  font-family: inherit;
-  
+
+.Navigation ul {
+  list-style: none; /* remove list styles */
+  margin: 0;
+  padding: 0;
+  display: flex; /* make the list items display in a row */
+  flex-wrap: wrap; /* allow the items to wrap to the next line if needed */
+  transform: translate(0, -10%);
+}
+
+.Navigation li {
+  margin: 0.5em; /* remove margin */
+  padding: 0; /* remove padding */
+}
+
+.router {
+  text-decoration: none; /* remove text decoration */
+  color: var(--TextDark); /* set the text color */
+  font-size: 2em;
+  transition: font-weight 0.2s, font-style 0.2s; /* add a transition effect for hover */
+}
+
+.router:hover {
+  text-decoration: underline;
+  font-style: italic;
+  font-weight: 600; /* increase the font weight on hover */
+}
+  .Socials {
+    position: relative;
+    font-size: 0;
+    transform: translate(84%, -93%);
   }
-  .router {
-    text-decoration: none;
-    font-family: inherit;
-    padding-left: 1em;
+  .Socials > img {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    width: 3.5%;
+    height: auto;
   }
 }
