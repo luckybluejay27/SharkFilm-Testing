@@ -1,6 +1,7 @@
 {
   "name": "sharkfilm-testing",
   "version": "0.0.0",
+  "homepage": "https://luckybluejay27.github.io/SharkFilm-Testing/",
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
