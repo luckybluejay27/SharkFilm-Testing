@@ -46,7 +46,7 @@ h1 {
   transform-origin: 50% 50%;
 }
 .Navigation {
-  font-family: 'ConcertOne', serif;
+  font-family: 'ConcertOne';
   background-color: var(--SurfaceDark);
   height: 6vh; /* lock the height to 9vh */
   display: flex; /* make the navigation items display in a row */
