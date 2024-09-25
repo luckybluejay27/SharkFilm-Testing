@@ -1,12 +1,12 @@
 <template>
   <div class="Navigation">
     <ul>
-      <li><router-link to="/">Home</router-link></li>
-      <li><router-link to="/CommissionsView">Commissions</router-link></li>
-      <li><router-link to="/SupportView">Support Us</router-link></li>
-      <li><router-link to="/LoginView">Login</router-link></li>
-      <li><router-link to="/LibraryView">Library</router-link></li>
-      <li><router-link to="/PortfolioView">Portfolio</router-link></li>
+      <li><router-link class="router" to="/">Home</router-link></li>
+      <li><router-link class="router" to="/CommissionsView">Commissions</router-link></li>
+      <li><router-link class="router" to="/SupportView">Support Us</router-link></li>
+      <li><router-link class="router" to="/LoginView">Login</router-link></li>
+      <li><router-link class="router" to="/LibraryView">Library</router-link></li>
+      <li><router-link class="router" to="/PortfolioView">Portfolio</router-link></li>
     </ul>
     <router-view />
   </div>

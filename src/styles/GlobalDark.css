@@ -10,10 +10,18 @@
   /* Vector Colours */
   --SVG-Dark: #ffffff;
   /* Rest is Self Explanatory */
-  --SurfaceDark: #115c17;
+  --SurfaceDark: #2c3d3d;
   --LinkDark: #69cdff;
   --TitleColor: #141414;
 /* Typography */
+@font-face {
+  font-family: 'Shrikhand';
+  src: url('./assets/fonts/Shrikhand-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'ConcertOne';
+  src: url('./assets/fonts/ConcertOne-Regular.ttf') format('truetype');
+}
 /* Main Body */
 body {
   background-color: var(--PageDark);
@@ -73,15 +81,31 @@ Surface {
   transform-origin: 50% 50%;
 }
 .Navigation{
-  background-color: var(--SurfaceDark);
+  font-size: 100%;
+  font-family: 'ConcertOne', serif;
 }
 .Navigation > ul {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(0, 1fr));
+  font-family: inherit;
+  display: flex;
+  flex-wrap: wrap;
   gap: 1vw;
+  grid-template-columns: repeat(auto-fill, minmax(0, 1fr));
+  list-style-type: none;
+  text-decoration: none;
+  background-color: var(--SurfaceDark);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 .Navigation > li {
   margin-right: 0.5vh;
   float: left;
+  padding: 10vw;
+  font-family: inherit;
+  
+  }
+  .router {
+    text-decoration: none;
+    font-family: inherit;
+    padding-left: 1em;
   }
 }
