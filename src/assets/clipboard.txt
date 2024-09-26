@@ -1,39 +1,114 @@
-.Navigation{
-  font-size: 2.5vh;
-  font-family: 'ConcertOne', serif;
-  max-height: 5vh;
-  flex-basis: 10vh;
-  background-color: var(--SurfaceDark);
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+/* Global Variables */
+:root {
+  --PageDark: #416969;
+  --TextDark: #ffffff;
+  --NoSurfaceText: #353535;
+  /* For strong or emphasized words inside lines */
+  --Highlight-Dark: #002736;
+  /* When denoting text inside significant containers such as tables */
+  --Tables-Dark: #ffffff;
+  /* Vector Colours */
+  --SVG-Dark: #ffffff;
+  /* Rest is Self Explanatory */
+  --SurfaceDark: #2c3d3d;
+  --LinkDark: #69cdff;
+  --TitleColor: #141414;
 }
-.Navigation > ul {
-  font-family: inherit;
+
+/* Typography */
+@font-face {
+  font-family: 'Shrikhand';
+  src: url('./assets/fonts/Shrikhand-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'ConcertOne';
+  src: url('./assets/fonts/ConcertOne-Regular.ttf') format('truetype');
+}
+
+/* Main Body */
+body {
+  background-color: var(--PageDark);
+}
+
+h1 {
+  top: 10vh;
+  left: 1em;
+  font-size: 3vh;
+  font-family: 'Times New Roman', serif;
+  color: var(--TextDark);
+  text-align: left;
+  width: calc(100% - 2em);
+  transform: translate(-580%, 100%);
+}
+
+.TestElement {
+  transform: translate(0,6000%);
+}
+
+/* Containers */
+.SharkSplash {
+  transform: translate(-60%, 400%);
+  transform-origin: 50% 50%;
+}
+.nav-container {
+  position: fixed;
+}
+.Navigation {
+  font-family: 'ConcertOne';
+  background-color: var(--SurfaceDark);
+  height: 6vh;
   display: flex;
   flex-wrap: wrap;
-  gap: 1vw;
-  grid-template-columns: repeat(auto-fill, minmax(0, 1fr));
-  list-style-type: none;
-  text-decoration: none;
-  background-color: var(--SurfaceDark);
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  justify-content: space-between;
 }
-.Navigation > li {
-  margin-right: 0.5vh;
-  float: left;
-  padding: 10vw;
-  font-family: inherit;
-  
-  }
-  .router {
-    text-decoration: none;
-    font-family: inherit;
-    padding-left: 1em;
-    color: var(--TextDark);
-  }
-  .router:hover {
-    text-decoration: underline;
-    font-style: italic;
-    font-size: 105%;
-  }
+
+.Navigation > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  transform: translate(0, -10%);
+}
+
+.Navigation > ul > li {
+  margin: 0.5em;
+  padding: 0;
+}
+
+.router {
+  text-decoration: none;
+  color: var(--TextDark);
+  font-size: 2em;
+  transition: font-weight 0.2s, font-style 0.2s;
+}
+
+.router:hover {
+  text-decoration: underline;
+  font-style: italic;
+  font-weight: 600;
+}
+
+.Socials {
+  font-size: 0;
+  transform: translate(84%, -93%);
+}
+
+.Socials > a > img {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+  width: 3.5%;
+  height: auto;
+}
+
+.Socials > a > img[alt="Videos"] {
+  height: 1%;
+  width: 3.2%;
+  margin-bottom: 0.15%;
+}
+
+.Socials > a > img:hover {
+  filter: brightness(0) saturate(100%) invert(52%) sepia(9%) saturate(8%) hue-rotate(335deg) brightness(94%) contrast(83%);
+  opacity: 0.9;
+}

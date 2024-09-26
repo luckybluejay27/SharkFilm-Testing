@@ -1,6 +1,7 @@
 <template>
+  <SharkLogo />
   <div>
-    <SharkLogo />
+    <text>Hello Sire</text>
   </div>
 </template>
 

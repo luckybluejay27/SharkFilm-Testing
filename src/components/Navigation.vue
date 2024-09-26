@@ -1,5 +1,5 @@
 <template>
-  <div class="Navigation">
+  <div class="navbar">
     <ul>
       <li><router-link class="router" to="/">Home</router-link></li>
       <li><router-link class="router" to="/CommissionsView">Commissions</router-link></li>
@@ -14,7 +14,7 @@
 
   <script>
   export default {
-    name: 'Navigation',
+    name: 'NavBar',
     data () {
       return {
         routes: [

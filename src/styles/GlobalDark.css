@@ -4,7 +4,7 @@
   --TextDark: #ffffff;
   --NoSurfaceText: #353535;
   /* For strong or emphasized words inside lines */
-  --Highlight-Dark: #001e36;
+  --Highlight-Dark: #002736;
   /* When denoting text inside significant containers such as tables */
   --Tables-Dark: #ffffff;
   /* Vector Colours */
@@ -13,83 +13,17 @@
   --SurfaceDark: #2c3d3d;
   --LinkDark: #69cdff;
   --TitleColor: #141414;
-/* Typography */
-@font-face {
-  font-family: 'Shrikhand';
-  src: url('./assets/fonts/Shrikhand-Regular.ttf') format('truetype');
 }
-@font-face {
-  font-family: 'ConcertOne';
-  src: url('./assets/fonts/ConcertOne-Regular.ttf') format('truetype');
-}
-/* Main Body */
+/* /Global Variables */
 body {
   background-color: var(--PageDark);
 }
-h1 {
+text {
   position: absolute;
-  top: 10vh; /* stay beneath the first 10% of the viewport's height */
-  left: 1em; /* 1em margin from the left corner */
-  font-size: 3vh; /* relative to the root element */
-  font-family: 'Times New Roman', serif;
-  color: var(--TextDark);
-  text-align: left; /* word wrapped and listed left to right, top to bottom */
-  width: calc(100% - 2em); /* take up the full width minus the 1em margin on both sides */
+  font-size: 200%;
+  margin-top: 100%;
 }
-
-/* Containers */
-.SharkSplash {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  transform-origin: 50% 50%;
-}
-.Navigation {
-  font-family: 'ConcertOne';
-  background-color: var(--SurfaceDark);
-  height: 6vh; /* lock the height to 9vh */
-  display: flex; /* make the navigation items display in a row */
-  flex-wrap: wrap; /* allow the items to wrap to the next line if needed */
-  justify-content: space-between; /* distribute the items evenly across the width */
-}
-
-.Navigation ul {
-  list-style: none; /* remove list styles */
-  margin: 0;
-  padding: 0;
-  display: flex; /* make the list items display in a row */
-  flex-wrap: wrap; /* allow the items to wrap to the next line if needed */
-  transform: translate(0, -10%);
-}
-
-.Navigation li {
-  margin: 0.5em; /* remove margin */
-  padding: 0; /* remove padding */
-}
-
-.router {
-  text-decoration: none; /* remove text decoration */
-  color: var(--TextDark); /* set the text color */
-  font-size: 2em;
-  transition: font-weight 0.2s, font-style 0.2s; /* add a transition effect for hover */
-}
-
-.router:hover {
-  text-decoration: underline;
-  font-style: italic;
-  font-weight: 600; /* increase the font weight on hover */
-}
-  .Socials {
-    position: relative;
-    font-size: 0;
-    transform: translate(84%, -93%);
-  }
-  .Socials > img {
-    display: inline-block;
-    vertical-align: middle;
-    margin-right: 10px;
-    width: 3.5%;
-    height: auto;
-  }
+.navbar {
+position: sticky;
+top: 0;
 }
