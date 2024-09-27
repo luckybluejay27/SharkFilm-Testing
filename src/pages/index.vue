@@ -1,4 +1,5 @@
 <template>
+  <SharkLogo />
   <div class="page">
     <text>Hello Sire</text>
   </div>
