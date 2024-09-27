@@ -8,7 +8,7 @@
           filter: brightness(0) saturate(100%) invert(100%) sepia(96%)
             saturate(20%) hue-rotate(211deg) brightness(104%) contrast(100%);
         "
-      />
+      >
     </a>
     <a href="https://www.twitter.com" target="_blank">
       <img
@@ -18,19 +18,19 @@
           filter: brightness(0) saturate(100%) invert(100%) sepia(96%)
             saturate(20%) hue-rotate(211deg) brightness(104%) contrast(100%);
         "
-      />
+      >
     </a>
     <a href="https://subscribestar.adult" target="_blank">
-      <img alt="SubscribeStar" src="../assets/SubscribeStar Icon Color.svg" />
+      <img alt="SubscribeStar" src="../assets/SubscribeStar Icon Color.svg">
     </a>
     <a href="https://vimeo.com" target="_blank">
-      <img alt="Videos" src="../assets/VideoHost.svg" />
+      <img alt="Videos" src="../assets/VideoHost.svg">
     </a>
   </div>
 </template>
 
 <script>
-export default {
-  name: "Socials",
-};
+  export default {
+    name: 'Socials',
+  }
 </script>

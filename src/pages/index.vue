@@ -6,14 +6,9 @@
 </template>
 
 <script>
-import SharkLogo from "@/components/SharkLogo.vue";
-
-export default {
-  name: "Index",
-  components: {
-    SharkLogo,
-  },
-};
+  export default {
+    name: 'Index',
+  }
 </script>
 
 <style>
