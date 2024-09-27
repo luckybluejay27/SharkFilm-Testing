@@ -12,20 +12,20 @@
   </div>
 </template>
 
-  <script>
-  export default {
-    name: 'NavBar',
-    data () {
-      return {
-        routes: [
-          { name: 'Home', path: '/' },
-          { name: 'SupportView', path: '/SupportView' },
-          { name: 'LoginView', path: '/LoginView' },
-          { name: 'LibraryView', path: '/LibraryView' },
-          { name: 'PortfolioView', path: '/PortfolioView' },
-          { name: 'CommissionsView', path: '/CommissionsView' },
-        ],
-      }
-    },
+<script>
+export default {
+  name: 'NavBar',
+  data() {
+    return {
+      routes: [
+        { name: 'Home', path: '/' },
+        { name: 'SupportView', path: '/SupportView' },
+        { name: 'LoginView', path: '/LoginView' },
+        { name: 'LibraryView', path: '/LibraryView' },
+        { name: 'PortfolioView', path: '/PortfolioView' },
+        { name: 'CommissionsView', path: '/CommissionsView' }
+      ]
+    }
   }
-  </script>
+}
+</script>

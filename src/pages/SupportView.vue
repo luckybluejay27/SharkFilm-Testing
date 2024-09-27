@@ -4,12 +4,12 @@
   </div>
 </template>
 
-  <script>
-  export default {
-    name: 'SupportView',
-  }
-  </script>
+<script>
+export default {
+  name: 'SupportView'
+}
+</script>
 
-  <style>
-  /* Your styles here */
-  </style>
+<style>
+/* Your styles here */
+</style>

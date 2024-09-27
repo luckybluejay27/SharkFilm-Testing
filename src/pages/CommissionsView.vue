@@ -4,12 +4,12 @@
   </div>
 </template>
 
-  <script>
-  export default {
-    name: 'CommissionsView',
-  }
-  </script>
+<script>
+export default {
+  name: 'CommissionsView'
+}
+</script>
 
-  <style>
-  /* Your styles here */
-  </style>
+<style>
+/* Your styles here */
+</style>

@@ -112,3 +112,26 @@ h1 {
   filter: brightness(0) saturate(100%) invert(52%) sepia(9%) saturate(8%) hue-rotate(335deg) brightness(94%) contrast(83%);
   opacity: 0.9;
 }
+
+
+{
+    "compileOnSave": true,
+    "compilerOptions": {
+        "outDir": "./dist",
+        "allowJs": true,
+        "target": "es5",
+        "allowUnreachableCode": false,
+        "noImplicitReturns": true,
+        "noImplicitAny": true,
+        "typeRoots": [ "./typings" ],
+        "outFile": "./dist/combined.js"
+    },
+    "include": [
+        "./**/*"
+    ],
+    "exclude": [
+        "./plugins/**/*",
+        "./typings/**/*",
+        "./dist/**/*" // This is what fixed it!
+    ]
+}

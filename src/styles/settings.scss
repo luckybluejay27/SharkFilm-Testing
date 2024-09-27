@@ -8,13 +8,3 @@
 // @use 'vuetify/settings' with (
 //   $color-pack: false
 // );
-$font-path: './src/assets/fonts/'; // or '../src/assets/fonts/' depending on your SCSS file location
-
-@font-face {
-  font-family: 'Shrikhand';
-  src: url(#{$font-path} + 'Shrikhand-Regular.ttf') format('truetype');
-}
-@font-face {
-    font-family: 'ConcertOne';
-    src: url(#{$font-path} + 'ConcertOne-Regular.ttf') format('truetype');
-  }

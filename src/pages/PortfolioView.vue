@@ -5,12 +5,12 @@
   </div>
 </template>
 
-  <script>
-  export default {
-    name: 'PortfolioView',
-  }
-  </script>
+<script>
+export default {
+  name: 'PortfolioView'
+}
+</script>
 
-  <style>
-  /* Your styles here */
-  </style>
+<style>
+/* Your styles here */
+</style>

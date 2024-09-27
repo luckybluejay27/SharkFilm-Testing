@@ -5,17 +5,17 @@
   </div>
 </template>
 
-  <script>
-  import SharkLogo from '@/components/SharkLogo.vue'
+<script>
+import SharkLogo from '@/components/SharkLogo.vue'
 
-  export default {
-    name: 'Index',
-    components: {
-      SharkLogo,
-    },
+export default {
+  name: 'Index',
+  components: {
+    SharkLogo
   }
-  </script>
+}
+</script>
 
-  <style>
-  /* Your styles here */
-  </style>
+<style>
+/* Your styles here */
+</style>
