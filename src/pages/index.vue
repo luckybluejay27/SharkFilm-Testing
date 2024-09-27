@@ -1,6 +1,5 @@
 <template>
-  <SharkLogo />
-  <div>
+  <div class="page">
     <text>Hello Sire</text>
   </div>
 </template>
@@ -17,5 +16,8 @@ export default {
 </script>
 
 <style>
-/* Your styles here */
+.page {
+    height: 800px;
+}
+
 </style>

@@ -18,7 +18,7 @@
         <router-link class="router" to="/PortfolioView">Portfolio</router-link>
       </li>
     </ul>
-    <router-view />
+    <SharkLogo />
   </div>
 </template>
 
@@ -39,3 +39,9 @@ export default {
   },
 };
 </script>
+
+<style>
+    .navbar {
+        position: fixed;
+    }
+</style>

@@ -1,9 +1,10 @@
 <template>
   <div id="app">
-    <!-- Your app content here -->
     <Navigation />
+    <div class="body">
+        <router-view />
+    </div>
     <Socials />
-    <RouterLink />
   </div>
 </template>
 
@@ -20,3 +21,9 @@
     },
   }
 </script>
+
+<style>
+.body {
+ padding-top: 250px;   
+}
+</style>
