@@ -6,8 +6,8 @@
 
 <script>
 export default {
-  name: 'SupportView'
-}
+  name: "SupportView",
+};
 </script>
 
 <style>

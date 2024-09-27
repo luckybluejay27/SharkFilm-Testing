@@ -6,8 +6,8 @@
 
 <script>
 export default {
-  name: 'CommissionsView'
-}
+  name: "CommissionsView",
+};
 </script>
 
 <style>

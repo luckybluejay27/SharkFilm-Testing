@@ -19,11 +19,9 @@ body {
   background-color: var(--PageDark);
 }
 text {
-  position: absolute;
   font-size: 200%;
   margin-top: 100%;
 }
 .navbar {
-  position: sticky;
   top: 0;
 }

@@ -7,8 +7,8 @@
 
 <script>
 export default {
-  name: 'LibraryView'
-}
+  name: "LibraryView",
+};
 </script>
 
 <style>
