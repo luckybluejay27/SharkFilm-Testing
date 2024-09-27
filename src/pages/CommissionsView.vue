@@ -5,9 +5,9 @@
 </template>
 
 <script>
-export default {
-  name: "CommissionsView",
-};
+  export default {
+    name: 'CommissionsView',
+  }
 </script>
 
 <style>

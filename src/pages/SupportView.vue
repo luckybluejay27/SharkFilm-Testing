@@ -5,9 +5,9 @@
 </template>
 
 <script>
-export default {
-  name: "SupportView",
-};
+  export default {
+    name: 'SupportView',
+  }
 </script>
 
 <style>

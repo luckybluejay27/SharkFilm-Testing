@@ -6,9 +6,9 @@
 </template>
 
 <script>
-export default {
-  name: "LibraryView",
-};
+  export default {
+    name: 'LibraryView',
+  }
 </script>
 
 <style>
