@@ -37,7 +37,7 @@ text {
 .navbar {
   top: 0;
   text-align: center;
-  background-color: rgba(44, 61, 61, 0.3);
+  background-color: rgba(44, 61, 61, 0.5);
   width: 100%;
   z-index: 2;
   height: fit-content;
