@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>This is the Support View</h1>
+    <text>This is the Support View</text>
   </div>
 </template>
 

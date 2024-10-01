@@ -19,12 +19,17 @@
         <router-link class="router" to="/PortfolioView">Portfolio</router-link>
       </li>
     </ul>
+    <Socials />
   </div>
 </template>
 
 <script>
+  import Socials from './Socials.vue'
   export default {
-    name: 'NavBar',
+    name: 'PrimeNav',
+    components: {
+      Socials,
+    },
     data () {
       return {
         routes: [
@@ -35,13 +40,15 @@
           { name: 'PortfolioView', path: '/PortfolioView' },
           { name: 'CommissionsView', path: '/CommissionsView' },
         ],
+        navbarHeight: 0,
       }
     },
   }
 </script>
 
 <style>
-    .navbar {
-        position: fixed;
-    }
+  .navbar {
+    position: fixed;
+    z-index: 1;
+  }
 </style>

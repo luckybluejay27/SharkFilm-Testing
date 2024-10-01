@@ -1,4 +1,4 @@
-/* Global Variables */
+/*#Global Variables */
 :root {
   --PageDark: #416969;
   --TextDark: #ffffff;
@@ -14,14 +14,80 @@
   --LinkDark: #69cdff;
   --TitleColor: #141414;
 }
-/* /Global Variables */
+/* Font Import */
+  @font-face {
+    font-family: 'Shrikhand';
+    src: url('../assets/fonts/Shrikhand-Regular.ttf') format('truetype');
+  }
+  @font-face {
+    font-family: 'ConcertOne';
+    src: url('../assets/fonts/ConcertOne-Regular.ttf') format('truetype');
+  }
+/* Basic Elements */
 body {
   background-color: var(--PageDark);
 }
 text {
   font-size: 200%;
-  margin-top: 100%;
+  position: relative;
+  top: 0%;
+  font-family: 'Times New Roman', Times, serif;
 }
+/* PrimeNav.vue */
 .navbar {
   top: 0;
+  text-align: center;
+  background-color: rgba(44, 61, 61, 0.3);
+  width: 100%;
+  z-index: 2;
+  height: fit-content;
 }
+.navbar > ul {
+  display: flex;
+  flex-direction: row;
+}
+.navbar > ul > li {
+  list-style: none;
+  padding: 1em;
+}
+a {
+  text-decoration: none;
+  color: var(--TextDark);
+  font-family: "Shrikhand", Serif;
+}
+a:hover {
+  font-style: oblique;
+  font-weight: 600;
+}
+/* Shark Splash */
+img {
+  transform-origin: center;
+}
+.SharkSplash {
+  position: absolute;;
+  transform: translate(27vw, 20vh);
+  text-align: center;
+  transform-origin: center;
+  opacity: 80%;
+}
+/* Socials */
+  .Socials {
+    position: absolute;
+    z-index: 2;
+    transform: translate(85.6vw, -6vh);
+    transform-origin: right right;
+  }
+  .Socials > a > img {
+    height: 6vh;
+  }
+  .Socials > a > img:hover {
+    opacity: 0.5;
+  }
+  /* Animated Text */
+  .text-transition-enter-active, .text-transition-leave-active {
+    transition: opacity 0.1s;
+  }
+  
+  .text-transition-enter, .text-transition-leave-to {
+    opacity: 0;
+  }
