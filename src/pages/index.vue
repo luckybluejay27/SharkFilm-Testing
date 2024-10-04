@@ -18,10 +18,5 @@
   .SharkSplash {
     position: absolute;
     transform-origin: center;
-    /* Completely Centered, Regardless of parent, without fixed */
-    transform-origin: center;
-    justify-content: center;
-    align-items: center;
-    transform: translate(50vw, 50vh);
   }
 </style>
