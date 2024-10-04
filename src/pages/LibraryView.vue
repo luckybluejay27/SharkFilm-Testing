@@ -1,7 +1,6 @@
 <template>
-  <div>
-    <!-- Your TestView content here -->
-    <text>This is the LibraryView</text>
+  <div class="page">
+    Library
   </div>
 </template>
 

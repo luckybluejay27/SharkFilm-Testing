@@ -1,13 +1,13 @@
 <template>
-  <div id="app">
+  <div id="app" class="comtainer">
     <PrimeNav />
-    <div class="body">
-      <router-view />
-    </div>
+    <router-view />
+    <BottomPanel />
   </div>
 </template>
 
 <script>
+  import BottomPanel from './components/BottomPanel.vue'
   import './assets/fonts/Shrikhand-Regular.ttf'
   import './assets/fonts/ConcertOne-Regular.ttf'
   import PrimeNav from './components/PrimeNav.vue'
@@ -15,12 +15,10 @@
     name: 'App',
     components: {
       PrimeNav,
+      BottomPanel,
     },
   }
 </script>
 
 <style>
-.body {
- padding-top: 250px;
-}
 </style>

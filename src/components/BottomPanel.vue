@@ -1,15 +1,14 @@
 <template>
-  <div class="page">
-    Support
+  <div class="BottomPanel">
+    Some Advertising
   </div>
 </template>
 
 <script>
   export default {
-    name: 'SupportView',
+    name: 'BottomPanel',
   }
 </script>
 
 <style>
-/* Your styles here */
 </style>

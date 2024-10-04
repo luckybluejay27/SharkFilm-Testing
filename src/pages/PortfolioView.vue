@@ -1,7 +1,6 @@
 <template>
-  <div>
-    <!-- Your TestView content here -->
-    <text>This is the PortfolioView</text>
+  <div class="page">
+    Portfolio
   </div>
 </template>
 

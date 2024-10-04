@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <text>This is the Comms View</text>
+  <div class="page">
+    Comms
   </div>
 </template>
 

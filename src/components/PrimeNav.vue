@@ -1,17 +1,18 @@
 <template>
-  <div class="navbar">
+  <div class="PrimeNav">
     <ul>
-      <li><router-link class="router" to="/">Home</router-link></li>
       <li>
-        <router-link
-          class="router"
-          to="/CommissionsView"
-        >Commissions</router-link>
+        <router-link class="router" to="/">Home</router-link>
+      </li>
+      <li>
+        <router-link class="router" to="/CommissionsView">Commissions</router-link>
       </li>
       <li>
         <router-link class="router" to="/SupportView">Support Us</router-link>
       </li>
-      <li><router-link class="router" to="/LoginView">Login</router-link></li>
+      <li>
+        <router-link class="router" to="/LoginView">Login</router-link>
+      </li>
       <li>
         <router-link class="router" to="/LibraryView">Library</router-link>
       </li>
@@ -19,17 +20,12 @@
         <router-link class="router" to="/PortfolioView">Portfolio</router-link>
       </li>
     </ul>
-    <Socials />
   </div>
 </template>
 
 <script>
-  import Socials from './Socials.vue'
   export default {
     name: 'PrimeNav',
-    components: {
-      Socials,
-    },
     data () {
       return {
         routes: [
@@ -46,9 +42,6 @@
   }
 </script>
 
-<style>
-  .navbar {
-    position: fixed;
-    z-index: 1;
-  }
+<style scoped>
+
 </style>
