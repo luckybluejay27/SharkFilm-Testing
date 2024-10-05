@@ -1,15 +1,12 @@
 /*#Global Variables */
 :root {
+  --zoom: 1;
   --PageDark: #416969;
   --TextDark: #ffffff;
   --NoSurfaceText: #353535;
-  /* For strong or emphasized words inside lines */
   --Highlight-Dark: #002736;
-  /* When denoting text inside significant containers such as tables */
   --Tables-Dark: #ffffff;
-  /* Vector Colours */
   --SVG-Dark: #ffffff;
-  /* Rest is Self Explanatory */
   --SurfaceDark: #2c3d3d;
   --LinkDark: #69cdff;
   --TitleColor: #141414;
@@ -32,12 +29,12 @@ body {
   height: 100vh; /* Full viewport height */
   background-color: var(--PageDark);
 }
-
 .container {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
   overflow: hidden;
+  height: 100vh;
 }
 
 .PrimeNav {
@@ -49,28 +46,18 @@ body {
 }
 
 .page {
+  margin-top: 5vmin;
   flex-grow: 1;
-  overflow-y: auto;
-  margin-top: 5vh; /* Adjust based on PrimeNav height */
-  margin-bottom: 5vh; /* Adjust based on BottomPanel height */
 }
-
-
 /* Navigation */
 .PrimeNav {
   font-family: 'ConcertOne', serif;
-  font-size: 110%;
+  font-size: 2vmin;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  /* border: 0.3em solid var(--NoSurfaceText); */
   padding: 0.5em;
   position: fixed;
-}
-.BottomPanel {
-  margin-bottom: 0;
-  width: 100%;
-  background-color: var(--SurfaceDark);
 }
 .PrimeNav ul {
   list-style: none;
@@ -92,4 +79,19 @@ body {
 
 .PrimeNav a:hover {
   color: var(--LinkDark);
+}
+.BottomPanel {
+  margin-top: 100vmin;
+  background-color: var(--SurfaceDark);
+  font-size: calc(1em + 0.5em * var(--zoom));
+}
+/* SharkSplash */
+.SharkSplash {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  scale: var(--zoom);
+  transform: translate(-50%, -50%);
+  width: calc(60vmin + 10vmin * var(--zoom));
+  height: calc(60vmin + 10vmin * var(--zoom));
 }
