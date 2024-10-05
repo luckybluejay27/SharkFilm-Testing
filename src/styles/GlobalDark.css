@@ -58,10 +58,12 @@ body {
 
 /* Navigation */
 .PrimeNav {
+  font-family: 'ConcertOne', serif;
+  font-size: 110%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  border: 0.3em solid var(--NoSurfaceText);
+  /* border: 0.3em solid var(--NoSurfaceText); */
   padding: 0.5em;
   position: fixed;
 }
