@@ -11,4 +11,10 @@
 </script>
 
 <style>
+.BottomPanel {
+  margin-top: 0;
+  padding-top: 0;
+  display: flex;
+  flex-direction: column;
+}
 </style>

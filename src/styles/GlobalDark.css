@@ -32,9 +32,7 @@ body {
 .container {
   display: flex;
   flex-direction: column;
-  flex-grow: 1;
-  overflow: hidden;
-  height: 100vh;
+  gap: 0;
 }
 
 .PrimeNav {
@@ -81,7 +79,6 @@ body {
   color: var(--LinkDark);
 }
 .BottomPanel {
-  margin-top: 100vmin;
   background-color: var(--SurfaceDark);
   font-size: calc(1em + 0.5em * var(--zoom));
 }
@@ -94,4 +91,36 @@ body {
   transform: translate(-50%, -50%);
   width: calc(60vmin + 10vmin * var(--zoom));
   height: calc(60vmin + 10vmin * var(--zoom));
+}
+/* ImageCarousel */
+.ImageCarousel {
+  display: flex;
+  justify-content: left;
+  align-items: flex-start; /* Aligns items to the top */
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  padding: 1vh 1vw
+}
+
+.CarouselItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1vh 1vw;
+  flex-shrink: 0;
+}
+
+.CarouselItem img {
+  max-height: 30vh;
+  width: auto;
+  margin-bottom: 0.1vh; /* Space between image and title */
+}
+
+.ImageTitle {
+  text-align: center;
+  margin: 0;
+  font-size: 1vmin;
+  color: var(--TextDark); /* Use your text color variable */
+  max-width: 150px; /* Adjust as needed */
+  word-wrap: break-word;
 }
