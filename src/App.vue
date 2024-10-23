@@ -21,9 +21,5 @@
 </script>
 
 <style>
-.content {
-  flex: 1;
-  position: relative;
-  padding-bottom: 0;
-}
+
 </style>

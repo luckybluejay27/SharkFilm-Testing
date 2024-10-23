@@ -22,14 +22,4 @@
   </script>
 
   <style scoped>
-    h1 {
-        font-family: 'ConcertOne', serif;
-    }
-    p {
-        font-size: 1em;
-    }
-    .PromoView {
-      position: relative;
-      margin-top: 100vh;
-    }
   </style>

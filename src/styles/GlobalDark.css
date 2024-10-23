@@ -62,7 +62,7 @@ body {
   left: 0;
   width: 100%;
   background-color: var(--SurfaceDark);
-  z-index: 1000;
+  z-index: -2;
 }
 
 .PrimeNav ul {
@@ -92,26 +92,6 @@ body {
   background-color: var(--SurfaceDark);
   font-size: calc(1em + 0.5em * var(--zoom));
 }
-
-/* Social Navigation */
-.nav-socials {
-  margin-left: auto;
-}
-
-.Socials {
-  transform-origin: bottom;
-  display: flex;
-  align-items: center;
-  height: 1em;
-  z-index: 1;
-}
-
-.Socials img {
-  height: 2.1em;
-  width: auto;
-  margin-top: 1em;
-}
-
 /* Splash Screen */
 .SharkSplash {
   position: absolute;
@@ -151,4 +131,26 @@ body {
   text-align: center;
   margin: 0;
   font-size: 1v
+}
+.BottomPanel {
+  margin-top: 0;
+  padding-top: 0;
+  display: flex;
+  flex-direction: column;
+}
+h1 {
+  font-family: 'ConcertOne', serif;
+}
+p {
+  font-size: 1em;
+}
+.PromoView {
+position: relative;
+margin-top: 100vh;
+height: 90vh;
+}
+.content {
+  flex: 1;
+  position: relative;
+  padding-bottom: 0;
 }
