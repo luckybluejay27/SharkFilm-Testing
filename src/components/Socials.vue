@@ -34,3 +34,6 @@
     name: 'Socials',
   }
 </script>
+
+<style scoped>
+</style>

@@ -12,7 +12,7 @@
 
   export default {
     name: 'Home',
-    components: { PromotionalView },
+    components: PromotionalView,
     data () {
       return {
         isAnimating: false,

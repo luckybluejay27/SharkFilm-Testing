@@ -20,12 +20,16 @@
         <router-link class="router" to="/PortfolioView">Portfolio</router-link>
       </li>
     </ul>
+    <Socials class="nav-socials" />
   </div>
 </template>
 
 <script>
+  import Socials from './Socials.vue'
+
   export default {
     name: 'PrimeNav',
+    components: { Socials },
     data () {
       return {
         routes: [
@@ -43,5 +47,4 @@
 </script>
 
 <style scoped>
-
 </style>

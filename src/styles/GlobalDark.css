@@ -1,53 +1,55 @@
-/*#Global Variables */
+/* Global Variables */
 :root {
   --zoom: 1;
+  
+  /* Colors */
   --PageDark: #416969;
+  --SurfaceDark: #2c3d3d;
+  --Highlight-Dark: #002736;
+  --TitleColor: #141414;
+  
+  /* Text Colors */
   --TextDark: #ffffff;
   --NoSurfaceText: #353535;
-  --Highlight-Dark: #002736;
+  --LinkDark: #69cdff;
+  
+  /* Component Colors */
   --Tables-Dark: #ffffff;
   --SVG-Dark: #ffffff;
-  --SurfaceDark: #2c3d3d;
-  --LinkDark: #69cdff;
-  --TitleColor: #141414;
 }
+
 /* Font Import */
-  @font-face {
-    font-family: 'Shrikhand';
-    src: url('../assets/fonts/Shrikhand-Regular.ttf') format('truetype');
-  }
-  @font-face {
-    font-family: 'ConcertOne';
-    src: url('../assets/fonts/ConcertOne-Regular.ttf') format('truetype');
-  }
-/* Basic Elements */
+@font-face {
+  font-family: 'Shrikhand';
+  src: url('../assets/fonts/Shrikhand-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'ConcertOne';
+  src: url('../assets/fonts/ConcertOne-Regular.ttf') format('truetype');
+}
+
+/* Basic Layout */
 body {
-  position: unset;
   margin: 0;
   display: flex;
   flex-direction: column;
-  height: 100vh; /* Full viewport height */
+  min-height: 100vh;
   background-color: var(--PageDark);
 }
+
 .container {
   display: flex;
   flex-direction: column;
   gap: 0;
 }
 
-.PrimeNav {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background-color: var(--SurfaceDark);
-  z-index: 1000;
-}
-
 .page {
   margin-top: 5vmin;
   flex-grow: 1;
 }
-/* Navigation */
+
+/* Navigation Styles */
 .PrimeNav {
   font-family: 'ConcertOne', serif;
   font-size: 2vmin;
@@ -56,7 +58,13 @@ body {
   justify-content: space-between;
   padding: 0.5em;
   position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--SurfaceDark);
+  z-index: 1000;
 }
+
 .PrimeNav ul {
   list-style: none;
   margin: 0;
@@ -78,28 +86,51 @@ body {
 .PrimeNav a:hover {
   color: var(--LinkDark);
 }
+
+/* Bottom Panel */
 .BottomPanel {
   background-color: var(--SurfaceDark);
   font-size: calc(1em + 0.5em * var(--zoom));
 }
-/* SharkSplash */
+
+/* Social Navigation */
+.nav-socials {
+  margin-left: auto;
+}
+
+.Socials {
+  transform-origin: bottom;
+  display: flex;
+  align-items: center;
+  height: 1em;
+  z-index: 1;
+}
+
+.Socials img {
+  height: 2.1em;
+  width: auto;
+  margin-top: 1em;
+}
+
+/* Splash Screen */
 .SharkSplash {
   position: absolute;
   top: 50%;
   left: 50%;
-  scale: var(--zoom);
   transform: translate(-50%, -50%);
   width: calc(60vmin + 10vmin * var(--zoom));
   height: calc(60vmin + 10vmin * var(--zoom));
+  scale: var(--zoom);
 }
-/* ImageCarousel */
+
+/* Image Carousel */
 .ImageCarousel {
   display: flex;
   justify-content: left;
-  align-items: flex-start; /* Aligns items to the top */
+  align-items: flex-start;
   flex-wrap: nowrap;
   overflow-x: auto;
-  padding: 1vh 1vw
+  padding: 1vh 1vw;
 }
 
 .CarouselItem {
@@ -113,14 +144,11 @@ body {
 .CarouselItem img {
   max-height: 30vh;
   width: auto;
-  margin-bottom: 0.1vh; /* Space between image and title */
+  margin-bottom: 0.1vh;
 }
 
 .ImageTitle {
   text-align: center;
   margin: 0;
-  font-size: 1vmin;
-  color: var(--TextDark); /* Use your text color variable */
-  max-width: 150px; /* Adjust as needed */
-  word-wrap: break-word;
+  font-size: 1v
 }

@@ -1,0 +1,142 @@
+/*#Global Variables */
+:root {
+  --zoom: 1;
+  --PageDark: #416969;
+  --TextDark: #ffffff;
+  --NoSurfaceText: #353535;
+  --Highlight-Dark: #002736;
+  --Tables-Dark: #ffffff;
+  --SVG-Dark: #ffffff;
+  --SurfaceDark: #2c3d3d;
+  --LinkDark: #69cdff;
+  --TitleColor: #141414;
+}
+/* Font Import */
+  @font-face {
+    font-family: 'Shrikhand';
+    src: url('../assets/fonts/Shrikhand-Regular.ttf') format('truetype');
+  }
+  @font-face {
+    font-family: 'ConcertOne';
+    src: url('../assets/fonts/ConcertOne-Regular.ttf') format('truetype');
+  }
+/* Basic Elements */
+body {
+  position: unset;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Full viewport height */
+  background-color: var(--PageDark);
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.PrimeNav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: var(--SurfaceDark);
+  z-index: 1000;
+}
+
+.page {
+  margin-top: 5vmin;
+  flex-grow: 1;
+}
+/* Navigation */
+.PrimeNav {
+  font-family: 'ConcertOne', serif;
+  font-size: 2vmin;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0.5em;
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  height: 2.5em;
+  line-height: 1;
+}
+.PrimeNav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.PrimeNav li {
+  margin-right: 1em;
+}
+
+.PrimeNav a {
+  color: var(--TextDark);
+  text-decoration: none;
+}
+
+.PrimeNav a:hover {
+  color: var(--LinkDark);
+}
+.BottomPanel {
+  background-color: var(--SurfaceDark);
+  font-size: calc(1em + 0.5em * var(--zoom));
+}
+/* Prime Nav Container */
+.nav-socials {
+  margin-left: auto; /* Pushes socials to the right */
+}
+.Socials {
+  z-index: 1;
+}
+.Socials img {
+  height: 3rem;
+  width: auto;
+}
+/* SharkSplash */
+.SharkSplash {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  scale: var(--zoom);
+  transform: translate(-50%, -50%);
+  width: calc(60vmin + 10vmin * var(--zoom));
+  height: calc(60vmin + 10vmin * var(--zoom));
+}
+/* ImageCarousel */
+.ImageCarousel {
+  display: flex;
+  justify-content: left;
+  align-items: flex-start; /* Aligns items to the top */
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  padding: 1vh 1vw
+}
+
+.CarouselItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1vh 1vw;
+  flex-shrink: 0;
+}
+
+.CarouselItem img {
+  max-height: 30vh;
+  width: auto;
+  margin-bottom: 0.1vh; /* Space between image and title */
+}
+
+.ImageTitle {
+  text-align: center;
+  margin: 0;
+  font-size: 1vmin;
+  color: var(--TextDark); /* Use your text color variable */
+  max-width: 150px; /* Adjust as needed */
+  word-wrap: break-word;
+}
