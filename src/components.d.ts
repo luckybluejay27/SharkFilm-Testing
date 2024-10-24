@@ -19,5 +19,6 @@ declare module 'vue' {
     RouterView: typeof import('vue-router')['RouterView']
     SharkLogo: typeof import('./components/SharkLogo.vue')['default']
     Socials: typeof import('./components/Socials.vue')['default']
+    VariantPrimeNav: typeof import('./components/variantPrimeNav.vue')['default']
   }
 }

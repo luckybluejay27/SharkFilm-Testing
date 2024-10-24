@@ -20,6 +20,7 @@
         <router-link class="router" to="/PortfolioView">Portfolio</router-link>
       </li>
     </ul>
+    <Socials />
   </div>
 </template>
 
