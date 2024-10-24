@@ -25,6 +25,5 @@
     "skipLibCheck": true
   },
   "include": ["src/**/*", "src/**/*.vue"],
-  "exclude": ["dist", "node_modules", "cypress"],
-  "references": [{ "path": "./tsconfig.node.json" }]
+  "exclude": ["dist", "node_modules", "cypress", "src/layouts/*/*"] // Exclude the specific file
 }
