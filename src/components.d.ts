@@ -13,6 +13,7 @@ declare module 'vue' {
     HelloWorld: typeof import('./components/HelloWorld.vue')['default']
     HomeNav: typeof import('./components/HomeNav.vue')['default']
     PrimeNav: typeof import('./components/PrimeNav.vue')['default']
+    PrimeNavIndex: typeof import('./components/PrimeNavIndex.vue')['default']
     PromotionalView: typeof import('./components/PromotionalView.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']

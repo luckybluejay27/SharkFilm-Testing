@@ -1,4 +1,6 @@
 <template>
+  <PrimeNav class="custom-prime-nav" :primes="primes" />
+  <Socials class="custom-socials" :socials="socials" />
   <div class="page">
     <SharkLogo class="SharkSplash" />
     <h2 :class="{ 'animate-text': isAnimating }">{{ animationText }}</h2>
@@ -8,11 +10,15 @@
 </template>
 
 <script>
+  import PrimeNav from '@/components/PrimeNav.vue'
   import PromotionalView from '../components/PromotionalView.vue'
+  import Socials from '../components/Socials.vue'
 
   export default {
     name: 'Home',
     components: PromotionalView,
+    Socials,
+    PrimeNav,
     data () {
       return {
         isAnimating: false,
@@ -41,20 +47,12 @@
   }
 </script>
 
-<style>
-.SharkSplash {
+<style scoped>
+.custom-prime-nav {
+  background-color: transparent;
+}
+.custom-socials {
+  background-color: black;
   position: absolute;
-  transform-origin: center;
-}
-
-h2 {
-  font-size: 3vmin;
-  opacity: 0.8;
-  font-family: 'ConcertOne';
-  transform: translate(76vmin, 55vmin);
-}
-
-.animate-text {
-  transition: all 0.5s;
 }
 </style>

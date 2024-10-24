@@ -24,8 +24,10 @@
 </template>
 
 <script>
+  import Socials from './Socials.vue'
   export default {
     name: 'PrimeNav',
+    components: Socials,
     data () {
       return {
         routes: [

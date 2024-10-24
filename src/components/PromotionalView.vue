@@ -1,18 +1,18 @@
 <template>
   <div class="PromoView">
-    <h1> Our Works </h1>
+    <h1 class="scrollable-content"> Our Works </h1>
     <div class="ImageCarousel">
       <div class="CarouselItem">
-        <img alt="AnimePromo" src="../Storage/Anime1.jpg">
-        <p class="ImageTitle"> AnimePromo </p>
+        <img alt="Coffee & Magic" src="../Storage/Anime1.jpg">
+        <p class="ImageTitle"> Coffee & Magic </p>
       </div>
       <div class="CarouselItem">
-        <img alt="GamePromo" src="../Storage/Game1.png">
-        <p class="ImageTitle"> GamePromo </p>
+        <img alt="Carcinogen" src="../Storage/Game1.png">
+        <p class="ImageTitle"> Carcinogen </p>
       </div>
       <div class="CarouselItem">
-        <img alt="MangaPromo" src="../Storage/Manga1.jpg">
-        <p class="ImageTitle"> MangaPromo </p>
+        <img alt="War and Roses" src="../Storage/Manga1.jpg">
+        <p class="ImageTitle"> War and Roses </p>
       </div>
     </div>
   </div>
