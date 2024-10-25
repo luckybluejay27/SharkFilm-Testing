@@ -16,7 +16,3 @@
     Socials,
   }
 </script>
-
-<style>
-/* Your styles here */
-</style>

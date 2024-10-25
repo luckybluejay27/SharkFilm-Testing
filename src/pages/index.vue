@@ -1,51 +1,34 @@
 <template>
-  <PrimeNav :isIndex="true" />
+  <PrimeNav />
   <Socials />
-  <div class="page">
-    <SharkLogo class="SharkSplash" />
-    <h2 :class="{ 'animate-text': isAnimating }">{{ animationText }}</h2>
-    <PromotionalView />
+
+  <!-- Splash -->
+  <div class="index">
+    <img src="../assets/SharkSplashTitle.svg">
+    <h1> Animation: Unhindered </h1>
   </div>
 
+  <!-- Promotional Content -->
+  <br>
+  <br>
+  <ProjectCarousel />
+
+  <!-- Mission Statement -->
+  <div class="carousel-title">
+    Our Mission
+    <h1 class="mission"> Our mission is to empower artists to collaborate on products that resonate with authenticity and creative freedom. Through a network of crowdfunded projects, we aim to foster an environment where creators feel confident producing their best work, unrestricted by external pressures, and supported by a community that values creativity over commercial influence.</h1>
+  </div>
 </template>
 
 <script>
   import PrimeNav from '@/components/PrimeNav.vue'
-  import PromotionalView from '../components/PromotionalView.vue'
+  import ProjectCarousel from '../components/ProjectCarousel.vue'
   import Socials from '../components/Socials.vue'
 
   export default {
     name: 'Home',
-    components: PromotionalView,
+    components: ProjectCarousel,
     Socials,
     PrimeNav,
-    data () {
-      return {
-        isAnimating: false,
-        animationText: 'Animation: Unhinged',
-      }
-    },
-    mounted () {
-      window.addEventListener('scroll', this.handleScroll)
-    },
-    beforeUnmount () {
-      window.removeEventListener('scroll', this.handleScroll)
-    },
-    methods: {
-      handleScroll () {
-        const scrollPosition = window.scrollY
-
-        if (scrollPosition > 100 && !this.isAnimating) {
-          this.isAnimating = true
-          this.animationText = 'Animation: Untethered'
-        } else if (scrollPosition <= 100 && this.isAnimating) {
-          this.isAnimating = false
-          this.animationText = 'Animation: Unhinged'
-        }
-      },
-    },
   }
 </script>
-
-<style scoped>
-</style>
