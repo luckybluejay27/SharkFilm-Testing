@@ -16,246 +16,59 @@
   /* Component Colors */
   --Tables-Dark: #ffffff;           /* Table content color */
   --SVG-Dark: #ffffff;              /* SVG element color */
+  font-family: Inter, sans-serif;
+  font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
 }
 
-/* Font Imports */
-@font-face {
-  font-family: 'Shrikhand';         
-  src: url('../assets/fonts/Shrikhand-Regular.ttf') format('truetype');
-}
+@supports (font-variation-settings: normal) {
+  :root { font-family: InterVariable, sans-serif; }}
 
-@font-face {
-  font-family: 'ConcertOne';
-  src: url('../assets/fonts/ConcertOne-Regular.ttf') format('truetype');
-}
-
-/* Basic Layout */
+/* View Styles */
 body {
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  background-color: var(--PageDark); /* Body background color */
-}
-
-.container {
-  flex-direction: column;
-}
-
-.page {
-  margin-top: 5vmin;
-  flex-grow: 1;
-}
-
-.content {
-  flex: 1;
-  position: relative;
-  padding-bottom: 0;
-}
-
-h1 {
-  font-family: 'ConcertOne', serif;
-}
-
-h2 {
-  font-size: 3vmin;
-  opacity: 0.8;
-  font-family: 'ConcertOne';
-  transform: translate(76vmin, 55vmin);
-}
-
-p {
-  font-size: 1em;
-}
-
-/* Navigation Bar (PrimeNav) */
-.PrimeNav {
-  font-family: 'ConcertOne', serif;
-  font-size: 1.5vmin;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 0.5em;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: fit-content;
-  background-color: var(--SurfaceDark);
-  z-index: 1;
-}
-
-.PrimeNav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.PrimeNav li {
-  margin-right: 1em;
-}
-
-.PrimeNav a {
-  color: var(--TextDark);            /* Link text color */
-  text-decoration: none;
-}
-
-.PrimeNav a:hover {
-  color: var(--LinkDark);            /* Link hover color */
-}
-
-/* Router Link */
-.router {
-  font-size: 1.2em;
-}
-
-/* Navigation Bar Variant (Index Page) */
-.PrimeNavIndex {
-  font-family: 'ConcertOne', serif;
-  font-size: 2vmin;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 0.5em;
-  position: absolute;
-  top: 95vh;
-  height: fit-content;
-  left: 32vw;
-  width: 100%;
-  height: fit-content;
-  background-color: transparent;
-  z-index: 1;
-}
-
-.PrimeNavIndex ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.PrimeNavIndex li {
-  margin-right: 1em;
-}
-
-.PrimeNavIndex a {
-  color: var(--TextDark);            /* Link text color */
-  text-decoration: none;
-}
-
-.PrimeNavIndex a:hover {
-  color: var(--LinkDark);            /* Link hover color */
-}
-
-/* Bottom Panel (Footer Section) */
-.BottomPanel {
-  background-color: var(--SurfaceDark); /* Footer background color */
-  font-size: calc(1em + 0.5em * var(--zoom));
-  display: flex;
-  flex-direction: column;
-  margin-top: 0;
-  padding-top: 0;
-}
-
-/* Splash Screen for Main Page */
-.SharkSplash {
-  transform-origin: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: calc(60vmin + 10vmin * var(--zoom));
-  height: calc(60vmin + 10vmin * var(--zoom));
-  scale: var(--zoom);                /* Splash screen zoom factor */
-}
-
-/* Image Carousel */
-.ImageCarousel {
-  display: flex;
-  justify-content: left;
-  align-items: flex-start;
-  flex-wrap: nowrap;
-  overflow-x: auto;
-  padding: 1vh 1vw;
-}
-
-.CarouselItem {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 1vh 1vw;
-  flex-shrink: 0;                    /* Prevents shrinking of carousel items */
-}
-
-.CarouselItem img {
-  max-height: 30vh;
-  width: auto;
-  margin-bottom: 0.1vh;
-}
-
-.ImageTitle {
-  text-align: center;
-  margin: 0;
-  font-size: 1v;
-}
-
-.animate-text {
-  transition: all 0.5s;
-}
-
-/* Promo Section for Special Offers */
-.PromoView {
-  position: relative;
-  margin-top: 100vh;
-  height: 100vh;
-}
-
-/* Social Media Links (Icons) */
-.Socials {
-  display: inline-block;
-  position: fixed;
-  right: 0;
-  height: fit-content;
-  top: 0.1em;
-}
-
-.Socials ul {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  gap: 0.1em;
-}
-
-.Socials li {
-  display: flex;
-}
-
-.Socials a {
-  display: flex;
-  justify-content: center;
+  background-color: var(--PageDark);
+  width: 100vw;
+  left: auto;
+  right: auto;
   align-items: center;
 }
 
-.Socials img {
-  width: auto;
-  height: 2em;                       /* Icon size */
-  object-fit: contain;
-}
-
-.Socials img:hover {
-  filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.7)); /* Hover effect for icons */
-}
-
-/* Scrollable Content Section */
-.scrollable-content {
-  height: 10vh;
-  overflow-y: auto;
-  padding-right: 1vw;
-}
+/* Components */
+  /* PrimeNav */
+  .PrimeNav {
+    background-color: var(--SurfaceDark);
+    text-align: left;
+    font-size: 3vh;
+    width: 100%;
+    height: fit-content;
+    position: fixed;
+    font-family: 'Inter';
+    font-weight: 700;
+  }
+  .PrimeNav ul {
+    list-style-type: none;
+  }
+  .PrimeNav ul li {
+    display: inline-flex;
+  }
+  .PrimeNav ul li .router {
+    text-decoration: none;
+    padding: 0 1em 0 1em;
+    color: var(--TextDark);
+  }
+  .PrimeNav ul li .router:hover {
+    color: var(--LinkDark);
+  }
+  /* Socials */
+  .Socials {
+    position: fixed;
+    display: inline;
+    right: 0;
+    top: -1;
+  }
+  .Socials ul li a img {
+    align-items: center;
+    height: 4vh;
+    width: fit-content;
+    
+  }
+/* Pages */

@@ -1,1 +1,0 @@
-import{a as n,_ as t}from"./PrimeNav-BcdgCH1C.js";import{_ as p,o as c,c as r,b as e,d as _,F as m}from"./index-BYBSQfXJ.js";const i={name:"SupportView",components:n,Socials:t};function u(l,o,d,f,S,g){const s=n,a=t;return c(),r(m,null,[e(s),e(a),o[0]||(o[0]=_("div",{class:"page"}," Support ",-1))],64)}const x=p(i,[["render",u]]);export{x as default};
