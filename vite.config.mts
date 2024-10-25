@@ -14,7 +14,7 @@ import { fileURLToPath, URL } from 'node:url'
 // https://vitejs.dev/config/
 export default defineConfig({
   // Specify the base URL for GitHub Pages deployment
-  base: '/https://luckybluejay27.github.io/SharkFilm-Testing//', // Replace with your actual repository name
+  base: '/SharkFilm-Testing//', // Replace with your actual repository name
   plugins: [
     VueRouter({
       dts: 'src/typed-router.d.ts',
