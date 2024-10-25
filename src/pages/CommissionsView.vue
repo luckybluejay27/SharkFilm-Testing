@@ -1,6 +1,6 @@
 <template>
-  <PrimeNav />
   <Socials />
+  <PrimeNav />
   <div class="page">
     Comms
   </div>
@@ -16,3 +16,7 @@
     Socials,
   }
 </script>
+
+<style>
+/* Your styles here */
+</style>

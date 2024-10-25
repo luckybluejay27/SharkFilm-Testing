@@ -28,219 +28,234 @@
   font-family: 'ConcertOne';
   src: url('../assets/fonts/ConcertOne-Regular.ttf') format('truetype');
 }
+
+/* Basic Layout */
 body {
-  /* Viewport and overflow control */
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--PageDark); /* Body background color */
+}
+
+.container {
+  flex-direction: column;
+}
+
+.page {
+  margin-top: 5vmin;
+  flex-grow: 1;
+}
+
+.content {
+  flex: 1;
+  position: relative;
+  padding-bottom: 0;
+}
+
+h1 {
+  font-family: 'ConcertOne', serif;
+}
+
+h2 {
+  font-size: 3vmin;
+  opacity: 0.8;
+  font-family: 'ConcertOne';
+  transform: translate(76vmin, 55vmin);
+}
+
+p {
+  font-size: 1em;
+}
+
+/* Navigation Bar (PrimeNav) */
+.PrimeNav {
+  font-family: 'ConcertOne', serif;
+  font-size: 1.5vmin;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0.5em;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: fit-content;
+  background-color: var(--SurfaceDark);
+  z-index: 1;
+}
+
+.PrimeNav ul {
+  list-style: none;
   margin: 0;
   padding: 0;
-  overflow-x: scroll;
-
-  /* Font settings */
-  font-family: 'ConcertOne', sans-serif;
-  font-size: 1rem; /* 16px equivalent */
-  line-height: 1.5;
-  color: white;
-
-  /* Background */
-  background-color: var(--PageDark);
-
-  /* Centering content */
   display: flex;
-
-  /* Smooth scrolling for a better UX */
-  scroll-behavior: smooth;
-
-  /* Improved text rendering */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-
-  /* Prevent text size adjustment on orientation change */
-  text-size-adjust: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
-/* Ensure all direct children of body are centered */
-body > * {
-  width: 100%;
+.PrimeNav li {
+  margin-right: 1em;
 }
 
-/* Basic heading styles */
-h1, h2, h3, h4, h5, h6 {
-  margin-top: 0;
-  line-height: 1.2;
-}
-
-/* Remove default margin on paragraphs */
-p {
-  margin-top: 0;
-}
-
-/* Ensure images don't overflow their containers */
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-/* Basic link styling */
-a {
-  color: #69cdff; /* Light blue for visibility on dark background */
+.PrimeNav a {
+  color: var(--TextDark);            /* Link text color */
   text-decoration: none;
-  transition: color 0.3s ease;
 }
 
-a:hover, a:focus {
-  color: #ffffff;
-  text-decoration: underline;
+.PrimeNav a:hover {
+  color: var(--LinkDark);            /* Link hover color */
 }
 
-/* Improve focus visibility for accessibility */
-:focus {
-  outline: 0.125rem solid #69cdff; /* 2px equivalent */
-  outline-offset: 0.125rem; /* 2px equivalent */
+/* Router Link */
+.router {
+  font-size: 1.2em;
 }
 
-/* Components */
-  /* PrimeNav */
-  .PrimeNav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0.5rem 1rem;
-    background-color: var(--SurfaceDark);
-    position: sticky;
-    top: 0;
-    width: 100%;
-    position: fixed;
-  }
-  
-  /* Responsive Navigation */
-  .PrimeNav ul {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .PrimeNav ul li {
-    margin: 0 1rem;
-  }
-  
-  /* Responsive Styles */
-  @media (max-width: 48rem) { /* Mobile view */
-    .PrimeNav ul {
-      display: none; /* Hidden by default on mobile */
-      flex-direction: column;
-      background-color: var(--PageDark);
-      position: absolute;
-      top: 100%;
-      left: 0;
-      right: 0;
-      padding: 1rem;
-      border-radius: 0.5rem;
-    }
-  
-    .PrimeNav ul.show-menu {
-      display: flex; /* Shown when menuOpen is true */
-    }
-  
-    .menu-toggle {
-      display: block;
-      background: none;
-      border: none;
-      font-size: 1.5rem;
-      color: var(--TextDark);
-    }
-  }
-  
-  /* Link Styling */
-  .router {
-    color: var(--LinkDark);
-    text-decoration: none;
-    transition: color 0.3s ease;
-  }
-  
-  .router:hover,
-  .router:focus {
-    color: #ffffff;
-    text-decoration: underline;
-  }
-  /* Socials */
-  .Socials {
-    display: flex;
-    position: absolute;
-    justify-content: flex-end;
-    padding: 1em;
-    top: -1em;
-    right: 0;
-  }
+/* Navigation Bar Variant (Index Page) */
+.PrimeNavIndex {
+  font-family: 'ConcertOne', serif;
+  font-size: 2vmin;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0.5em;
+  position: absolute;
+  top: 95vh;
+  height: fit-content;
+  left: 32vw;
+  width: 100%;
+  height: fit-content;
+  background-color: transparent;
+  z-index: 1;
+}
 
-  .Socials ul {
-    list-style: none; /* Remove default list styling */
-    padding: 0; /* Remove default padding */
-    margin: 0; /* Remove default margin */
-    display: flex; /* Use flexbox for the list */
-  }
-  
-  .Socials li {
-    margin-left: 10px; /* Add spacing between icons */
-  }
-  
-  .Socials img {
-    height: 40px; /* Set the height of the icons */
-    width: auto; /* Maintain aspect ratio */
-  }
-  /* Project Carousel */
-  .carousel-title {
-    font-size: 4vh;
-  }
-  .project-carousel {
-    margin-top: 25vh;
-  }
+.PrimeNavIndex ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 
-  .carousel-container {
-    display: flex; /* Use flexbox for horizontal layout */
-    overflow-x: auto; /* Enable horizontal scrolling */
-    padding: 2%; /* Padding around the perimeter */
-    scroll-snap-type: x mandatory; /* Optional for snap scrolling */
-  }
-  
-  .carousel-item {
-    display: flex;
-    flex-direction: column; /* Stack image and title vertically */
-    align-items: center; /* Center align items */
-    margin-right: 2vw; /* Padding between images */
-    scroll-snap-align: start; /* Optional for snap scrolling */
-  }
-  
-  .carousel-item img {
-    height: 30vh; /* Set image height */
-    width: auto; /* Maintain aspect ratio */
-  }
-  
-  .image-title {
-    text-align: center; /* Center align the title */
-    margin-top: 0.5rem; /* Space between image and title */
-  }
-  /* Bottom Panel */
-  .BottomPanel {
-    background-color: var(--SurfaceDark);
-  }
-/* pages */
-  /* index */
-  .index {
-    /* Complete alignment */
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20vh;
-  }
-  .index img {
-    width: 70%;
-    margin: inherit;
-  }
-  h1.mission {
-    font-size: 70%;
-    padding-left: 10%;
-    word-wrap: normal;
-    width: 70%;
-  }
+.PrimeNavIndex li {
+  margin-right: 1em;
+}
+
+.PrimeNavIndex a {
+  color: var(--TextDark);            /* Link text color */
+  text-decoration: none;
+}
+
+.PrimeNavIndex a:hover {
+  color: var(--LinkDark);            /* Link hover color */
+}
+
+/* Bottom Panel (Footer Section) */
+.BottomPanel {
+  background-color: var(--SurfaceDark); /* Footer background color */
+  font-size: calc(1em + 0.5em * var(--zoom));
+  display: flex;
+  flex-direction: column;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+/* Splash Screen for Main Page */
+.SharkSplash {
+  transform-origin: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: calc(60vmin + 10vmin * var(--zoom));
+  height: calc(60vmin + 10vmin * var(--zoom));
+  scale: var(--zoom);                /* Splash screen zoom factor */
+}
+
+/* Image Carousel */
+.ImageCarousel {
+  display: flex;
+  justify-content: left;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  padding: 1vh 1vw;
+}
+
+.CarouselItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1vh 1vw;
+  flex-shrink: 0;                    /* Prevents shrinking of carousel items */
+}
+
+.CarouselItem img {
+  max-height: 30vh;
+  width: auto;
+  margin-bottom: 0.1vh;
+}
+
+.ImageTitle {
+  text-align: center;
+  margin: 0;
+  font-size: 1v;
+}
+
+.animate-text {
+  transition: all 0.5s;
+}
+
+/* Promo Section for Special Offers */
+.PromoView {
+  position: relative;
+  margin-top: 100vh;
+  height: 100vh;
+}
+
+/* Social Media Links (Icons) */
+.Socials {
+  display: inline-block;
+  position: fixed;
+  right: 0;
+  height: fit-content;
+  top: 0.1em;
+}
+
+.Socials ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  gap: 0.1em;
+}
+
+.Socials li {
+  display: flex;
+}
+
+.Socials a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Socials img {
+  width: auto;
+  height: 2em;                       /* Icon size */
+  object-fit: contain;
+}
+
+.Socials img:hover {
+  filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.7)); /* Hover effect for icons */
+}
+
+/* Scrollable Content Section */
+.scrollable-content {
+  height: 10vh;
+  overflow-y: auto;
+  padding-right: 1vw;
+}
