@@ -1,5 +1,5 @@
 <template>
-  <PrimeNavIndex />
+  <PrimeNav :isIndex="true" />
   <Socials />
   <div class="page">
     <SharkLogo class="SharkSplash" />
@@ -10,7 +10,7 @@
 </template>
 
 <script>
-  import PrimeNavIndex from '@/components/PrimeNavIndex.vue'
+  import PrimeNav from '@/components/PrimeNav.vue'
   import PromotionalView from '../components/PromotionalView.vue'
   import Socials from '../components/Socials.vue'
 
@@ -18,7 +18,7 @@
     name: 'Home',
     components: PromotionalView,
     Socials,
-    PrimeNavIndex,
+    PrimeNav,
     data () {
       return {
         isAnimating: false,

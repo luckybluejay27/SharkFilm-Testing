@@ -45,15 +45,13 @@ body {
   margin-top: 5vmin;
   flex-grow: 1;
 }
-
+.promo-heading {
+  margin: auto;
+}
 .content {
   flex: 1;
   position: relative;
   padding-bottom: 0;
-}
-
-h1 {
-  font-family: 'ConcertOne', serif;
 }
 
 h2 {
@@ -63,8 +61,12 @@ h2 {
   transform: translate(76vmin, 55vmin);
 }
 
-p {
-  font-size: 1em;
+h2.promo {
+  font-size: 2.4vmin;
+  transform: unset;
+  width: 40vw;
+  margin: auto;
+  line-height: 120%;
 }
 
 /* Navigation Bar (PrimeNav) */
@@ -111,46 +113,6 @@ p {
   font-size: 1.2em;
 }
 
-/* Navigation Bar Variant (Index Page) */
-.PrimeNavIndex {
-  font-family: 'ConcertOne', serif;
-  font-size: 2vmin;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 0.5em;
-  position: absolute;
-  top: 95vh;
-  height: fit-content;
-  left: 32vw;
-  width: 100%;
-  height: fit-content;
-  background-color: transparent;
-  z-index: 1;
-}
-
-.PrimeNavIndex ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.PrimeNavIndex li {
-  margin-right: 1em;
-}
-
-.PrimeNavIndex a {
-  color: var(--TextDark);            /* Link text color */
-  text-decoration: none;
-}
-
-.PrimeNavIndex a:hover {
-  color: var(--LinkDark);            /* Link hover color */
-}
-
 /* Bottom Panel (Footer Section) */
 .BottomPanel {
   background-color: var(--SurfaceDark); /* Footer background color */
@@ -180,7 +142,7 @@ p {
   align-items: flex-start;
   flex-wrap: nowrap;
   overflow-x: auto;
-  padding: 1vh 1vw;
+  padding-top: -5vh;
 }
 
 .CarouselItem {
@@ -188,7 +150,7 @@ p {
   flex-direction: column;
   align-items: center;
   margin: 1vh 1vw;
-  flex-shrink: 0;                    /* Prevents shrinking of carousel items */
+  flex-shrink: 0;
 }
 
 .CarouselItem img {
@@ -211,7 +173,7 @@ p {
 .PromoView {
   position: relative;
   margin-top: 100vh;
-  height: 100vh;
+  height: 95vh;
 }
 
 /* Social Media Links (Icons) */
@@ -255,7 +217,7 @@ p {
 
 /* Scrollable Content Section */
 .scrollable-content {
-  height: 10vh;
+  height: 7vh;
   overflow-y: auto;
-  padding-right: 1vw;
+  padding-left: 40vw;
 }

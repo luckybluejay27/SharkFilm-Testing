@@ -1,6 +1,8 @@
 <template>
   <div class="PromoView">
     <!-- Our Work -->
+    <br>
+    <br>
     <div class="OurWork">
       <h1 class="scrollable-content"> Our Works </h1>
       <div class="ImageCarousel">
@@ -20,9 +22,10 @@
     </div>
 
     <!-- Our Job -->
+    <br>
     <div class="OurJob">
-      <h1 class="OurJob"> Our Job</h1>
-      <p> Mission statement </p>
+      <h1 class="scrollable-content"> Our Job </h1>
+      <h2 class="promo">"Our mission is to champion creative freedom in the arts by producing studio-quality work that thrives beyond the limits of traditional influences. We enable our creators to bring their visions to life with complete autonomy, supported by a funding model rooted in crowdfunding and community contributions. By prioritizing collaboration over external agendas, we empower networks of passionate individuals to come together and produce transformative work, free from the conventional pressures of corporate oversight."</h2>
     </div>
   </div>
 </template>
