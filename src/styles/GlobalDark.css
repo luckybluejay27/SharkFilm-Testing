@@ -19,11 +19,11 @@
   font-family: Inter, sans-serif;
   font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
 }
-
+/* Font Imports */
 @supports (font-variation-settings: normal) {
   :root { font-family: InterVariable, sans-serif; }}
 
-/* View Styles */
+/* Root Styles */
 body {
   background-color: var(--PageDark);
   width: 100vw;
@@ -31,8 +31,8 @@ body {
   right: auto;
   align-items: center;
 }
-
 /* Components */
+
   /* PrimeNav */
   .PrimeNav {
     background-color: var(--SurfaceDark);
@@ -50,13 +50,14 @@ body {
   .PrimeNav ul li {
     display: inline-flex;
   }
-  .PrimeNav ul li .router {
+  .PrimeNav ul li .nav-item {
     text-decoration: none;
     padding: 0 1em 0 1em;
     color: var(--TextDark);
   }
-  .PrimeNav ul li .router:hover {
+  .PrimeNav ul li .nav-item:hover {
     color: var(--LinkDark);
+    text-decoration: none;
   }
   /* Socials */
   .Socials {
@@ -69,6 +70,5 @@ body {
     align-items: center;
     height: 4vh;
     width: fit-content;
-    
   }
-/* Pages */
+  

@@ -1,26 +1,10 @@
 <template>
-  <div class="PrimeNav">
-    <ul>
-      <li>
-        <router-link class="router" to="/">Home</router-link>
-      </li>
-      <li>
-        <router-link class="router" to="/CommissionsView">Commissions</router-link>
-      </li>
-      <li>
-        <router-link class="router" to="/SupportView">Support Us</router-link>
-      </li>
-      <li>
-        <router-link class="router" to="/LoginView">Login</router-link>
-      </li>
-      <li>
-        <router-link class="router" to="/LibraryView">Library</router-link>
-      </li>
-      <li>
-        <router-link class="router" to="/PortfolioView">Portfolio</router-link>
-      </li>
-    </ul>
-  </div>
+  <v-conatiner class="PrimeNav">
+    <v-row justify-start>
+      <v-col v-for="route in routes" :key="route.name" class="nav-item">
+        <router-link class="router" :to="route.path">{{ route.name }}</router-link>
+      </v-col></v-row>
+  </v-conatiner>
 </template>
 
 <script>
@@ -30,17 +14,17 @@
       return {
         routes: [
           { name: 'Home', path: '/' },
+          { name: 'CommissionsView', path: '/CommissionsView' },
           { name: 'SupportView', path: '/SupportView' },
           { name: 'LoginView', path: '/LoginView' },
           { name: 'LibraryView', path: '/LibraryView' },
           { name: 'PortfolioView', path: '/PortfolioView' },
-          { name: 'CommissionsView', path: '/CommissionsView' },
         ],
-        navbarHeight: 0,
       }
     },
   }
 </script>
 
 <style scoped>
+
 </style>
