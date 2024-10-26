@@ -3,8 +3,10 @@
   <Socials />
   <CarouselPromo />
   <!-- Shark Splash -->
-  <img src="../assets/SharkSplashTitle.svg">
-  <h1 class="index-title"> Animation: Untethered</h1>
+  <div class="SharkSplash">
+    <img src="../assets/SharkSplashTitle.svg">
+    <h1 class="index-title"> Animation: Untethered</h1>
+  </div>
   <!--  -->
 
 </template>

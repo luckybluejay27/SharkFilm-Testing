@@ -1,7 +1,5 @@
 /* SCSS Variables */
 :root {
-  --zoom: 1;                       // Global zoom factor for scalable elements
-  
   // Colors
   --PageDark: #416969;             // Page background color
   --SurfaceDark: #2c3d3d;          // Surface (container) background color
@@ -31,47 +29,92 @@
 /* Root Styles */
 body {
   background-color: var(--PageDark);
-  width: 100%;
-  left: auto;
-  right: auto;
-  align-items: center;
-  margin: 0 0 0 0;
-}
-
-// Prime Nav
-
-  .PrimeNav {
-    background-color: var(--SurfaceDark);
-    width: 100vw;
-    height: fit-content;
-    position: fixed;
-    text-align: left;
-    top: 0;
-
-    ul {
-      list-style: none;
-      padding: 0 0 0 0;
-      align-items: center;
-
-      &:first-child {
-        padding-left: 1em;
-      }
-    }
-
-    li {
-      display: inline-block;
-      margin: 0 2em 0 0;
-    }
-
-    a {
-      padding: 0 0 0 0;
-      color: var(--TextDark);
-      text-decoration: none;
-      font-family: 'Inter', sans-serif;
-      font-weight: 900;
-
-      &:hover {
-        color: var(--LinkDark);
-      }
-    }
+  box-sizing: border-box;
+  
+  .container {
+    width: 100%;
+    height: 100%;
+    margin: 0 0 0 0;
+    padding: 0 0;
   }
+}
+// Components
+  // Prime Nav
+    .PrimeNav {
+      background-color: var(--SurfaceDark);
+      width: 100vw;
+      height: fit-content;
+      position: fixed;
+      text-align: left;
+      top: 0;
+
+      ul {
+        list-style: none;
+        padding: 0 0 0 0;
+        align-items: center;
+
+        &:first-child {
+          padding-left: 1em;
+        }
+      }
+
+      li {
+        display: inline-block;
+        margin: 0 2em 0 0;
+      }
+
+      a {
+        color: var(--TextDark);
+        text-decoration: none;
+        font-family: 'Inter', sans-serif;
+        font-weight: 900;
+
+        &:hover {
+          color: var(--LinkDark);
+        }
+      }
+    }
+  // Socials
+    .Socials {
+      position: fixed;
+      top: 0;
+      right: 0;
+      
+
+      ul {
+        list-style: none;
+      }
+
+      li {
+        margin: 0 0 0 0;
+        display:inline;
+      }
+
+      a {
+        padding: 0 0 0 0;
+        
+      }
+
+      img {
+        height: 2em;
+        width: fit-content;
+
+        &:hover {
+          box-shadow: 5px 5px 15px var(--TitleColor);
+        }
+      }
+    }
+  // SharkSplash
+    .SharkSplash {
+      position: absolute;
+    }
+
+  // BottomPanel
+    .BottomPanel {
+      position: fixed;
+      bottom: 0;
+      background-color: var(--SurfaceDark);
+      height: fit-content;
+      padding: 1em 0 0 0 ;
+      width: 100%;
+    }

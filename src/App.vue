@@ -7,8 +7,6 @@
 
 <script>
   import BottomPanel from './components/BottomPanel.vue'
-  import './assets/fonts/Shrikhand-Regular.ttf'
-  import './assets/fonts/ConcertOne-Regular.ttf'
   // import './styles/GlobalDark.css'
   import './styles/GlobalDark.scss'
   export default {

@@ -1,6 +1,6 @@
 <template>
   <div class="BottomPanel">
-    Some Advertising
+    Some Advertising Stuff
   </div>
 </template>
 
@@ -9,7 +9,3 @@
     name: 'BottomPanel',
   }
 </script>
-
-<style>
-
-</style>
