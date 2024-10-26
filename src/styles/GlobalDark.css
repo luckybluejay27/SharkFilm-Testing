@@ -33,42 +33,4 @@ body {
 }
 /* Components */
 
-  /* PrimeNav */
-  .PrimeNav {
-    background-color: var(--SurfaceDark);
-    text-align: left;
-    font-size: 3vh;
-    width: 100%;
-    height: fit-content;
-    position: fixed;
-    font-family: 'Inter';
-    font-weight: 700;
-  }
-  .PrimeNav ul {
-    list-style-type: none;
-  }
-  .PrimeNav ul li {
-    display: inline-flex;
-  }
-  .PrimeNav ul li .nav-item {
-    text-decoration: none;
-    padding: 0 1em 0 1em;
-    color: var(--TextDark);
-  }
-  .PrimeNav ul li .nav-item:hover {
-    color: var(--LinkDark);
-    text-decoration: none;
-  }
-  /* Socials */
-  .Socials {
-    position: fixed;
-    display: inline;
-    right: 0;
-    top: -1;
-  }
-  .Socials ul li a img {
-    align-items: center;
-    height: 4vh;
-    width: fit-content;
-  }
   

@@ -1,10 +1,11 @@
 <template>
-  <v-conatiner class="PrimeNav">
-    <v-row justify-start>
-      <v-col v-for="route in routes" :key="route.name" class="nav-item">
-        <router-link class="router" :to="route.path">{{ route.name }}</router-link>
-      </v-col></v-row>
-  </v-conatiner>
+  <div class="PrimeNav">
+    <ul>
+      <li v-for="route in routes" :key="route.name">
+        <router-link :to="route.path">{{ route.name }}</router-link>
+      </li>
+    </ul>
+  </div>
 </template>
 
 <script>
@@ -14,17 +15,16 @@
       return {
         routes: [
           { name: 'Home', path: '/' },
-          { name: 'CommissionsView', path: '/CommissionsView' },
-          { name: 'SupportView', path: '/SupportView' },
-          { name: 'LoginView', path: '/LoginView' },
-          { name: 'LibraryView', path: '/LibraryView' },
-          { name: 'PortfolioView', path: '/PortfolioView' },
+          { name: 'Commissions', path: '/CommissionsView' },
+          { name: 'Support', path: '/SupportView' },
+          { name: 'Login', path: '/LoginView' },
+          { name: 'Library', path: '/LibraryView' },
+          { name: 'Portfolio', path: '/PortfolioView' },
         ],
       }
     },
   }
 </script>
 
-<style scoped>
-
+<style>
 </style>
