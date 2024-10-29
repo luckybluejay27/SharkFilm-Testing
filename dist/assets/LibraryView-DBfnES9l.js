@@ -1,0 +1,1 @@
+import{_ as n,a}from"./PrimeNav-BrFnRo-m.js";import{_ as r,o as c,c as _,e as o,a as p,F as i}from"./index-mMQfSojb.js";const m={name:"LibraryView",components:n,Socials:a};function l(u,e,d,f,g,V){const s=n,t=a;return c(),_(i,null,[o(s),o(t),e[0]||(e[0]=p("div",{class:"page"}," Library ",-1))],64)}const x=r(m,[["render",l]]);export{x as default};
