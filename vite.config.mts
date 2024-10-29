@@ -13,7 +13,7 @@ import { fileURLToPath, URL } from 'node:url'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: 'https://github.com/luckybluejay27/SharkFilm-Testing',
+  base: '/SharkFilm-Testing/',
   plugins: [
     VueRouter({
       dts: 'src/typed-router.d.ts',
