@@ -1,1 +1,0 @@
-import{a as e,_ as s}from"./PrimeNav-CxHpDbS-.js";import{_ as c,o as _,c as r,b as n,a as p,F as i}from"./index-cMw-98nF.js";const m={name:"LoginView",components:e,Socials:s};function l(u,o,d,f,g,V){const a=e,t=s;return _(),r(i,null,[n(a),n(t),o[0]||(o[0]=p("div",{class:"page"}," Login ",-1))],64)}const B=c(m,[["render",l]]);export{B as default};
