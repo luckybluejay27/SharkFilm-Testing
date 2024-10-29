@@ -1,7 +1,7 @@
 {
   "name": "sharkfilm-testing",
   "version": "0.0.0",
-  "homepage": "https://morganwestcoding.github.io/morgan-west-portfolio",
+  "homepage": "https://luckybluejay27.github.io/SharkFilm-Testing/",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
