@@ -1,1 +1,0 @@
-import{a as n,_ as t}from"./PrimeNav-DohorGt9.js";import{_ as c,o as r,c as _,a as e,b as p,F as i}from"./index-BhbIitX-.js";const l={name:"PortfolioView",components:n,Socials:t};function m(f,o,u,d,g,P){const s=n,a=t;return r(),_(i,null,[e(s),e(a),o[0]||(o[0]=p("div",{class:"page"}," Portfolio ",-1))],64)}const x=c(l,[["render",m]]);export{x as default};
