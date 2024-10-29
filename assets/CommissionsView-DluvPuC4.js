@@ -1,1 +1,0 @@
-import{a as n,_ as e}from"./PrimeNav-5YVKM_mN.js";import{_ as c,o as m,c as _,a as s,b as r,F as i}from"./index-CqrFEbnp.js";const p={name:"CommissionsView",components:n,Socials:e};function l(u,o,d,f,g,V){const a=e,t=n;return m(),_(i,null,[s(a),s(t),o[0]||(o[0]=r("div",{class:"page"}," Comms ",-1))],64)}const B=c(p,[["render",l]]);export{B as default};
