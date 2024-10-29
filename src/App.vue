@@ -1,8 +1,8 @@
 <template>
   <div id="app" class="comtainer">
     <router-view />
-    <BottomPanel />
   </div>
+  <BottomPanel />
 </template>
 
 <script>

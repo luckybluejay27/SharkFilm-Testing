@@ -1,5 +1,10 @@
 <template>
-  <div class="PrimeNav">
+  <div
+    :class="['PrimeNav', {
+      'prime-index': isPrimeIndex,
+      'fixed-nav': isPrimeStick
+    }]"
+  >
     <ul>
       <li v-for="route in routes" :key="route.name">
         <router-link :to="route.path">{{ route.name }}</router-link>
@@ -11,6 +16,16 @@
 <script>
   export default {
     name: 'PrimeNav',
+    props: {
+      isPrimeIndex: {
+        type: Boolean,
+        default: false,
+      },
+      isPrimeStick: {
+        type: Boolean,
+        default: false,
+      },
+    },
     data () {
       return {
         routes: [
@@ -25,6 +40,3 @@
     },
   }
 </script>
-
-<style>
-</style>
