@@ -25,6 +25,19 @@
     font-family: InterVariable, sans-serif;
   }
 }
+@font-face {
+  font-family: 'Concert One';
+  src: url('../assets/fonts/ConcertOne-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Shrikhand';
+  src: url('../assets/fonts/Shrikhand-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 
 /* Root Styles */
 body {
@@ -115,6 +128,13 @@ body {
       flex-direction: column;
       align-items: center;
       justify-content: center;
+
+      .index-title {
+        font-size: 2em;
+        color: var(--TextDark);
+        font-family: 'Shrikhand', Serif;
+        opacity: 90%;
+      }
     }
 
   // BottomPanel
@@ -130,5 +150,34 @@ body {
     .CarouselPromo {
       position: relative;
       margin-top: 100vh;
-      min-height: 20vh;
+      min-height: 40vh;
+      overflow-x: auto;
+      overflow-y: hidden;
+      white-space: nowrap;
+      width: fit-content;
+      padding: 1em 0;
+
+      .carousel-item {
+        display: inline-block;
+        text-align: center;
+      }
+
+      .carousel-item img {
+        max-height: 20vh;
+        width: auto;
+        object-fit: contain;
+        padding: 0 1em 0 1em;
+      }
+
+      .carousel-item p {
+        font-family: 'ConcertOne', sans-serif;
+        margin-top: 0.5em;
+        white-space: normal;
+        font-size: 0.8em;
+      }
+
+      h1 {
+        font-family: 'ConcertOne', serif;
+        color: var(--TextDark);
+      }
     }
