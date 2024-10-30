@@ -2,6 +2,7 @@
   <div id="app" class="comtainer">
     <router-view />
   </div>
+  <h1 class="break-line" />
   <BottomPanel />
 </template>
 

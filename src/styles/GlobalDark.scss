@@ -54,20 +54,41 @@ body {
     color: var(--TextDark);
     font-size: 4vh;
   }
+
+  .break-line {
+    height: 10vh;
+    width: 100%;
+  }
+
+  .page {
+    padding-top: 6vh;
+  }
 }
 
 /* Components */
   // PrimeNav
   .PrimeNav {
+    display: inline-flex;
     font-family: 'ConcertOne', serif;
     background-color: var(--SurfaceDark);
-    width: fit-content;
+    min-width: fit-content;
+    width: 100vw;
     height: fit-content;
     position: absolute;
     text-align: left;
     top: 0;
     left: 50%;
     transform: translateX(-50%);
+    overflow-x: auto;
+    white-space: nowrap;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    z-index: 2;
+
+    // Hide scrollbar for Chrome, Safari, and Opera
+    &::-webkit-scrollbar {
+      display: none;
+    }
 
     &.prime-index {
       font-family: inherit;
@@ -77,32 +98,42 @@ body {
       top: 94vh;
       left: 50%;
       transform: translateX(-50%);
+      width: 60vw;
+      text-align: center;
+      display: inherit; 
     }
-
+    
     &.fixed-nav {
       position: fixed;
       top: 0;
-      position: fixed;
-      background-color: transparent !important;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: var(--PageDark) !important;
+      width: fit-content;
+      text-align: center; 
+      display: inherit;
+      
     }
 
     ul {
       list-style: none;
       padding: 0;
+      display: inline-flex;
       align-items: center;
-      white-space: nowrap;
-
+      width: max-content;
+  
       &:first-child {
         padding-left: 1em;
       }
     }
-
+  
     li {
       display: inline-block;
       margin: 0 2em 0 0;
       text-decoration: none;
       font-family: inherit;
     }
+  
 
     a {
       color: var(--TextDark);
@@ -121,7 +152,7 @@ body {
     position: fixed;
     top: 0;
     right: 0;
-    z-index: 2;
+    z-index: 3;
 
     ul {
       list-style: none;
@@ -169,6 +200,7 @@ body {
     color: var(--TextDark);
     font-family: 'ConcertOne', serif;
     font-size: 1rem;
+    
 
     .bottom-container {
       display: flex;

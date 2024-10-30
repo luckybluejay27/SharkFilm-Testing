@@ -1,1 +1,0 @@
-import{_ as n,a}from"./PrimeNav-BiYWKD9f.js";import{_ as r,o as c,c as _,g as e,a as p,F as i}from"./index-C8eAVgyR.js";const m={name:"LibraryView",components:n,Socials:a};function l(u,o,d,f,g,V){const s=n,t=a;return c(),_(i,null,[e(s),e(t),o[0]||(o[0]=p("div",{class:"page"}," Library ",-1))],64)}const x=r(m,[["render",l]]);export{x as default};
