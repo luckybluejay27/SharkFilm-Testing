@@ -5,6 +5,7 @@
   --SurfaceDark: #2c3d3d;          // Surface (container) background color
   --Highlight-Dark: #002736;       // Highlighted elements
   --TitleColor: #141414;           // Title color
+  --HeaderColor: #363636;
 
   // Text Colors
   --TextDark: #ffffff;             // General text color
@@ -12,7 +13,7 @@
   --LinkDark: #69cdff;             // Link hover color
 
   // Component Colors
-  --Tables-Dark: #ffffff;          // Table content color
+  --Tables-Dark: #F5E8A1;          // Table content color
   --SVG-Dark: #ffffff;             // SVG element color
 
   font-family: Inter, sans-serif;
@@ -61,7 +62,10 @@ body {
   }
 
   .page {
+    display: flex;
+    align-items: flex-start;
     padding-top: 6vh;
+    gap: 2rem;
   }
 }
 
@@ -69,12 +73,13 @@ body {
   // PrimeNav
   .PrimeNav {
     display: inline-flex;
-    font-family: 'ConcertOne', serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: normal;
     background-color: var(--SurfaceDark);
     min-width: fit-content;
     width: 100vw;
     height: fit-content;
-    position: absolute;
+    position: fixed;
     text-align: left;
     top: 0;
     left: 50%;
@@ -344,3 +349,70 @@ body {
       font-size: 2em;
     }
   }
+// CommCard 
+.CommCard {
+  position: relative;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  justify-content: space-between;
+  height: 90vh; 
+  padding-top: 8vh;
+  z-index: -2;
+
+  .column {
+    flex: 1;
+    flex-direction: column;
+    margin: 0 1rem 0 1rem; 
+    background-color: var(--Tables-Dark);
+    border-radius: 1em; 
+    height: 80%; 
+    text-align: center;
+  }
+
+  h1.ComCardH1 {
+    color: var(--TitleColor);
+    font-family: 'ConcertOne', serif;
+  }
+
+  h2.ComCardH2 {
+    color: var(--HeaderColor);
+    text-align: left;
+  }
+
+  .price-line {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin: 10px 0;
+    padding: 0 20px;
+  }
+
+  .dots {
+    flex: 1;
+    border-bottom: 2px dotted var(--HeaderColor);
+    margin: 0 10px;
+  }
+
+  .price {
+    color: var(--HeaderColor);
+    font-weight: bold;
+  }
+}
+.comm-image {
+  height: 90vh;
+  width: auto;
+  display: inline-flex;
+  padding-left: 1em;
+  padding-right: 2em;
+}
+
+.image_reference_container {
+  flex: 0 0 auto;
+}
+.comm-detail {
+  position: absolute;
+  transform: translate(37vw, -18vh);
+
+}
