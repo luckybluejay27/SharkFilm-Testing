@@ -349,70 +349,95 @@ body {
       font-size: 2em;
     }
   }
-// CommCard 
-.CommCard {
-  position: relative;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  // CommCard
+.commission-container {
   display: flex;
-  flex-direction: row;
-  flex: 1;
-  justify-content: space-between;
-  height: 90vh; 
-  padding-top: 8vh;
-  z-index: -2;
+  flex-wrap: wrap;
+  width: 96%;
+  height: 100%;
+  padding: 7vh 2em 0 2em;
+  gap: 2rem;
+  margin: 0 0 0 0;
 
-  .column {
+  .reference-section {
     flex: 1;
-    flex-direction: column;
-    margin: 0 1rem 0 1rem; 
-    background-color: var(--Tables-Dark);
-    border-radius: 1em; 
-    height: 80%; 
-    text-align: center;
+    max-width: 33%;
+
+    .reference-image {
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+    }
   }
 
-  h1.ComCardH1 {
-    color: var(--TitleColor);
-    font-family: 'ConcertOne', serif;
-  }
-
-  h2.ComCardH2 {
-    color: var(--HeaderColor);
-    text-align: left;
-  }
-
-  .price-line {
+  .pricing-section {
+    flex: 2;
     display: flex;
-    align-items: baseline;
-    justify-content: space-between;
-    margin: 10px 0;
-    padding: 0 20px;
+    gap: 2rem;
+    height: 60vh;
+
+    .price-card {
+      flex: 1;
+      background-color: var(--Tables-Dark);
+      border-radius: 1rem;
+      padding: 2rem;
+
+      h2 {
+        text-align: center;
+        margin-bottom: 2rem;
+        color: var(--TitleColor);
+        font-family: 'Concert One', serif;
+        font-size: 200%;
+      }
+
+      .price-line {
+        display: flex;
+        align-items: baseline;
+        margin-bottom: 1rem;
+        
+
+        .service {
+          flex: none;
+          color: var(--TitleColor);
+        }
+
+        .dotted-line {
+          flex: 1;
+          border-bottom: 2px dotted var(--TitleColor);
+          margin: 0 0.5rem;
+        }
+
+        .price {
+          flex: none;
+          color: var(--TitleColor);
+          font-weight: bold;
+        }
+      }
+    }
   }
 
-  .dots {
-    flex: 1;
-    border-bottom: 2px dotted var(--HeaderColor);
-    margin: 0 10px;
+  .addendum-section {
+    display: grid;
+    position: absolute;
+    width: 62vw;
+    // border-style: solid;
+    transform: translate(33vw, 60vh);
+    font-family: 'Concert One';
+    font-size: 120%;
+    h2 {
+      color: var(--TitleColor);
+      margin-bottom: 1rem;
+    }
+
+    ul {
+      list-style-type: disc;
+      padding-left: 6em;
+      li {
+        color: var(--TextDark);
+        margin-bottom: 0.5rem;
+        padding-left: 1rem;
+        font-size: 110%;
+      }
+    }
   }
-
-  .price {
-    color: var(--HeaderColor);
-    font-weight: bold;
-  }
-}
-.comm-image {
-  height: 90vh;
-  width: auto;
-  display: inline-flex;
-  padding-left: 1em;
-  padding-right: 2em;
-}
-
-.image_reference_container {
-  flex: 0 0 auto;
-}
-.comm-detail {
-  position: absolute;
-  transform: translate(37vw, -18vh);
-
 }

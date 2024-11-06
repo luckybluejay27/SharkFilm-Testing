@@ -1,92 +1,93 @@
+<!-- CommCards.vue -->
 <template>
-  <div class="CommCard">
-    <img
-      alt="TriSplit Refernce Image"
-      class="comm-image"
-      src="../assets/unsplash-stock.jpg"
-    >
-    <!-- Full Bod Card -->
-    <div class="column">
-      <h1 class="ComCardH1"> Full</h1>
-      <!-- Sketch -->
-      <div class="price-line">
-        <h2 class="ComCardH2"> Sketch</h2>
-        <span class="dots" />
-        <span class="price"> 125 USD</span>
+  <div class="commission-container">
+    <!-- Reference Image Section -->
+    <div class="reference-section">
+      <img
+        alt="Reference-Image"
+        class="reference-image"
+        src="../assets/unsplash-stock.jpg"
+      >
+    </div>
+
+    <!-- Pricing Cards Section -->
+    <div class="pricing-section">
+      <!-- Full Body Card -->
+      <div class="price-card">
+        <h2>Full Body</h2>
+        <div class="price-line">
+          <span class="service">Sketch</span>
+          <span class="dotted-line" />
+          <span class="price">125 USD</span>
+        </div>
+        <div class="price-line">
+          <span class="service">Flat Color</span>
+          <span class="dotted-line" />
+          <span class="price">150 USD</span>
+        </div>
+        <div class="price-line">
+          <span class="service">Shaded</span>
+          <span class="dotted-line" />
+          <span class="price">200 USD</span>
+        </div>
       </div>
-      <!-- Flat Color -->
-      <div class="price-line">
-        <h2 class="ComCardH2"> Flat Color</h2>
-        <span class="dots" />
-        <span class="price"> 150 USD</span>
+
+      <!-- Half Body Card -->
+      <div class="price-card">
+        <h2>Half Body</h2>
+        <div class="price-line">
+          <span class="service">Sketch</span>
+          <span class="dotted-line" />
+          <span class="price">100 USD</span>
+        </div>
+        <div class="price-line">
+          <span class="service">Flat Color</span>
+          <span class="dotted-line" />
+          <span class="price">125 USD</span>
+        </div>
+        <div class="price-line">
+          <span class="service">Shaded</span>
+          <span class="dotted-line" />
+          <span class="price">150 USD</span>
+        </div>
       </div>
-      <!-- Shaded Color -->
-      <div class="price-line">
-        <h2 class="ComCardH2"> Full Shaded</h2>
-        <span class="dots" />
-        <span class="price"> 200 USD</span>
+
+      <!-- Portrait Card -->
+      <div class="price-card">
+        <h2>Portrait</h2>
+        <div class="price-line">
+          <span class="service">Sketch</span>
+          <span class="dotted-line" />
+          <span class="price">75 USD</span>
+        </div>
+        <div class="price-line">
+          <span class="service">Flat Color</span>
+          <span class="dotted-line" />
+          <span class="price">100 USD</span>
+        </div>
+        <div class="price-line">
+          <span class="service">Shaded</span>
+          <span class="dotted-line" />
+          <span class="price">150 USD</span>
+        </div>
       </div>
     </div>
 
-    <!-- Half Bod Card -->
-    <div class="column">
-      <h1 class="ComCardH1"> Half Body</h1>
-      <!-- Sketch -->
-      <div class="price-line">
-        <h2 class="ComCardH2"> Sketch</h2>
-        <span class="dots" />
-        <span class="price"> 100 USD</span>
-      </div>
-      <!-- Flat Color -->
-      <div class="price-line">
-        <h2 class="ComCardH2"> Flat Color</h2>
-        <span class="dots" />
-        <span class="price"> 125 USD</span>
-      </div>
-      <!-- Shaded Color -->
-      <div class="price-line">
-        <h2 class="ComCardH2"> Full Shaded</h2>
-        <span class="dots" />
-        <span class="price"> 150 USD</span>
-      </div>
+    <!-- Addendum Section -->
+    <div class="addendum-section">
+      <h2>Commission Details</h2>
+      <ul>
+        <li>Complex Character Designs and Simple Armor have an additional 10% upcharge</li>
+        <li>Filigree, Tattoos, and Similar Intricacies have an added 20% upcharge</li>
+        <li>Additional charges are based on the total and are not cumulative</li>
+        <li>Added characters will be priced at the lowest tier of their size class</li>
+      </ul>
     </div>
-
-    <!-- Head Only Card -->
-    <div class="column">
-      <h1 class="ComCardH1"> Portrait</h1>
-      <!-- Sketch -->
-      <div class="price-line">
-        <h2 class="ComCardH2"> Sketch</h2>
-        <span class="dots" />
-        <span class="price"> 75 USD</span>
-      </div>
-      <!-- Flat Color -->
-      <div class="price-line">
-        <h2 class="ComCardH2"> Flat Color</h2>
-        <span class="dots" />
-        <span class="price"> 100 USD</span>
-      </div>
-      <!-- Shaded Color -->
-      <div class="price-line">
-        <h2 class="ComCardH2"> Full Shaded</h2>
-        <span class="dots" />
-        <span class="price"> 175 USD</span>
-      </div>
-    </div>
-  </div>
-  <div class="comm-detail">
-    <ul>
-      <h1>Commision Details</h1>
-      <li> Complex Character Designs and Simple armor have an additional 10% upcharge</li>
-      <li> Filligree, Tattoos, and Similar Intricacies have an added 20% upcharge</li>
-      <li> Additional Charges are based off the total, and are not cumulative.</li>
-      <li> Added Characters will be priced at the lowest teir of their size class</li>
-    </ul>
   </div>
 </template>
 
-  <script>
+<script>
   export default {
-    name: 'CommCard',
+    name: 'CommCards',
   }
-  </script>
+</script>
