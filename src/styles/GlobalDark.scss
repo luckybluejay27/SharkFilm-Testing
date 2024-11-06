@@ -51,7 +51,7 @@ body {
   }
 
   h1 {
-    font-family: 'ConcertOne', serif;
+    font-family: Arial, Helvetica, sans-serif;
     color: var(--TextDark);
     font-size: 4vh;
   }
@@ -279,14 +279,16 @@ body {
   // CarouselPromo
   .CarouselPromo {
     position: relative;
-    margin-top: 100vh;
-    min-height: 50vh;
+    padding-top: 100vh;
+    min-height: fit-content;
     overflow-x: auto;
     overflow-y: hidden;
     white-space: nowrap;
     width: fit-content;
-    padding: 1em 0;
     color: var(--TextDark);
+    font-size: 120%;
+    font-weight: 800;
+    transform: translate(0,10vh);
 
     .carousel-item {
       display: inline-block;
@@ -305,9 +307,8 @@ body {
         transform: translate(-50%, -50%) rotate(-45deg);
         background-color: rgba(255, 0, 0, 0.7);
         color: white;
-        padding: 5px 30px;
+        padding: 0.5em 4em;
         font-weight: bold;
-        font-family: 'ConcertOne', serif;
         white-space: nowrap;
         pointer-events: none;
         z-index: 1;
@@ -315,7 +316,7 @@ body {
 
       img {
         position: relative;
-        max-height: 20vh;
+        max-height: 25vh;
         width: auto;
         object-fit: contain;
         border: 0.15em solid turquoise;
@@ -328,28 +329,47 @@ body {
       }
 
       p {
-        font-family: 'ConcertOne', sans-serif;
         margin-top: 0.5em;
         white-space: normal;
         font-size: 0.8em;
       }
+
+      h1 {
+        font-family: Arial, Helvetica, sans-serif;
+      }
     }
   }
 
-  // OurMission
+// OurMission
   .OurMission {
     color: var(--TextDark);
-    font-family: 'ConcertOne', serif;
+    font-family: 'Concert One', serif;
     word-wrap: normal;
     height: fit-content;
-    padding-bottom: 20vh;
+    padding-bottom: 1vh;
+    transform: translate(0,10vh);
 
     p {
-      margin: 0 40vw 0 20vh;
+      // margin: 0 40vw 0 20vh;
+      @media (max-aspect-ratio: 1/1) {
+        width: 100%;
+        height: auto;
+        margin: 0;
+      }
+      @media (min-aspect-ratio: 1/1) {
+        width: 70vw;
+        height: auto;
+        margin: 0 auto;
+        transform: translate(-5vw, 0);
+      }
       font-size: 2em;
     }
+
+    h1 {
+      font-family: Arial, Helvetica, serif;
+    }
   }
-  // CommCard
+// Comm Card
 .commission-container {
   display: flex;
   flex-wrap: wrap;
