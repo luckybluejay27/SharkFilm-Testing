@@ -152,6 +152,28 @@ body {
     }
   }
 
+  // Height > Width
+  // Not independantly scrolling
+  // not shortening to width = total wiith - 10 vw for room for socials component
+  @media (max-width: 100vh) {
+    .PrimeNav,
+    .prime-index,
+    .fixed-nav {
+      white-space: nowrap;
+      // removed scrollbar properties
+      width: 10vw; //this width not changing in prime-index
+      text-align: left;
+      font-size: 1.2rem;
+      
+    }
+    .PrimeNav a,
+    .prime-index a,
+    .fixed-nav a {
+      display: inline-block;
+      margin-right: 1rem;
+  }
+}
+
   // Socials
   .Socials {
     position: fixed;
@@ -213,11 +235,6 @@ body {
       max-width: 90vw;
       margin: 0 auto;
       padding: 0 2rem;
-
-      @media (max-width: 768px) {
-        flex-direction: column;
-        gap: 2rem;
-      }
     }
 
     .advertise-section {
