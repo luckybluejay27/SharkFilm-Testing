@@ -152,26 +152,21 @@ body {
     }
   }
 
-  // Height > Width
-  // Not independantly scrolling
-  // not shortening to width = total wiith - 10 vw for room for socials component
   @media (max-width: 100vh) {
-    .PrimeNav,
+    
     .prime-index,
     .fixed-nav {
       white-space: nowrap;
-      // removed scrollbar properties
       text-align: left;
       font-size: 1.2rem;
       margin-left: -8vw;
     }
-    .PrimeNav a,
+    
     .prime-index a,
     .fixed-nav a {
       display: inline-block;
       margin-right: 1rem;
   }
-  .PrimeNav ul,
   .prime-index ul,
   .fixed-nav ul {
     width: 80vw;
@@ -393,92 +388,44 @@ body {
 // Comm Card
 .commission-container {
   display: flex;
-  flex-wrap: wrap;
-  width: 96%;
-  height: 100%;
-  padding: 7vh 2em 0 2em;
-  gap: 2rem;
-  margin: 0 0 0 0;
+  flex-wrap: wrap; /* Allows sections to wrap if needed */
+  width: 99vw;
+  height: 99vh;
+  margin: 5vh 0 0 0;
 
-  .reference-section {
-    flex: 1;
-    max-width: 33%;
-
-    .reference-image {
-      width: 100%;
-      height: auto;
-      object-fit: contain;
-    }
-  }
-
+  /* Default layout (landscape mode) */
+  .reference-section,
   .pricing-section {
-    flex: 2;
-    display: flex;
-    gap: 2rem;
-    height: 60vh;
-
-    .price-card {
-      flex: 1;
-      background-color: var(--Tables-Dark);
-      border-radius: 1rem;
-      padding: 2rem;
-
-      h2 {
-        text-align: center;
-        margin-bottom: 2rem;
-        color: var(--TitleColor);
-        font-family: 'Concert One', serif;
-        font-size: 200%;
-      }
-
-      .price-line {
-        display: flex;
-        align-items: baseline;
-        margin-bottom: 1rem;
-        
-
-        .service {
-          flex: none;
-          color: var(--TitleColor);
-        }
-
-        .dotted-line {
-          flex: 1;
-          border-bottom: 2px dotted var(--TitleColor);
-          margin: 0 0.5rem;
-        }
-
-        .price {
-          flex: none;
-          color: var(--TitleColor);
-          font-weight: bold;
-        }
-      }
-    }
+    flex: 0 0 50%; /* Each takes 50% of the width */
+    height: 100%; /* Full height */
+    box-sizing: border-box;
   }
 
   .addendum-section {
-    display: grid;
-    position: absolute;
-    width: 62vw;
-    // border-style: solid;
-    transform: translate(33vw, 60vh);
-    font-family: 'Concert One';
-    font-size: 120%;
-    h2 {
-      color: var(--TitleColor);
-      margin-bottom: 1rem;
+    flex: 0 0 100%; /* Full width for addendum section */
+    height: auto; /* Adjust to content */
+  }
+
+  /* Image styling */
+  .reference-image {
+    margin: 1em 0 0 1em;
+    width: auto;
+    height: 90%;
+    object-fit: cover;
+  }
+
+  /* Portrait mode: stack sections vertically */
+  @media screen and (orientation: portrait) {
+    flex-direction: column; /* Stack items vertically */
+    
+    .reference-section,
+    .pricing-section {
+      flex: 0 0 auto; /* Allow natural width */
+      height: auto; /* Allow height to adjust naturally */
     }
 
-    ul {
-      list-style-type: disc;
-      padding-left: 6em;
-      li {
-        color: var(--TextDark);
-        margin-bottom: 0.5rem;
-        padding-left: 1rem;
-        font-size: 110%;
-      }
+    .addendum-section {
+      flex: 0 0 auto; /* Allow natural stacking */
     }
   }
 }
