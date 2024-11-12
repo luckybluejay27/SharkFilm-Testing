@@ -161,16 +161,20 @@ body {
     .fixed-nav {
       white-space: nowrap;
       // removed scrollbar properties
-      width: 10vw; //this width not changing in prime-index
       text-align: left;
       font-size: 1.2rem;
-      
+      margin-left: -8vw;
     }
     .PrimeNav a,
     .prime-index a,
     .fixed-nav a {
       display: inline-block;
       margin-right: 1rem;
+  }
+  .PrimeNav ul,
+  .prime-index ul,
+  .fixed-nav ul {
+    width: 80vw;
   }
 }
 
