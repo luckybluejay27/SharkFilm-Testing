@@ -81,6 +81,7 @@
         <li>Filigree, Tattoos, and Similar Intricacies have an added 20% upcharge</li>
         <li>Additional charges are based on the total and are not cumulative</li>
         <li>Added characters will be priced at the lowest tier of their size class</li>
+        <li> Additional Requirements may apply. Read TOS <router-link class="tos-link" to="/TOS">here</router-link> </li>
       </ul>
     </div>
   </div>
