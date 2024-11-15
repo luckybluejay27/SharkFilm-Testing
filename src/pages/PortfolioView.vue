@@ -1,9 +1,7 @@
 <template>
   <PrimeNav />
   <Socials />
-  <div class="page">
-    Portfolio
-  </div>
+  <div class="page">Portfolio</div>
 </template>
 
 <script>

@@ -2,7 +2,11 @@
   <div class="Socials">
     <ul>
       <li>
-        <a href="https://www.reddit.com" rel="noopener noreferrer" target="_blank">
+        <a
+          href="https://www.reddit.com"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
           <img alt="Reddit" src="@/assets/Reddit Icon White.svg">
         </a>
       </li>
@@ -12,12 +16,23 @@
         </a>
       </li>
       <li>
-        <a href="https://www.subscribestar.com/" rel="noopener noreferrer" target="_blank">
-          <img alt="SubscribeStar" src="@/assets/SubscribeStar Icon Color.svg">
+        <a
+          href="https://www.subscribestar.com/"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <img
+            alt="SubscribeStar"
+            src="@/assets/SubscribeStar Icon Color.svg"
+          >
         </a>
       </li>
       <li>
-        <a href="https://www.vimeo.com" rel="noopener noreferrer" target="_blank">
+        <a
+          href="https://www.vimeo.com"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
           <img alt="Vimeo" src="@/assets/VideoHost.svg">
         </a>
       </li>
@@ -25,8 +40,8 @@
   </div>
 </template>
 
-  <script>
+<script>
   export default {
     name: 'Socials',
   }
-  </script>
+</script>

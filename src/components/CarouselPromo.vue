@@ -27,7 +27,7 @@
 
 <template>
   <div class="CarouselPromo">
-    <h1> Our Works </h1>
+    <h1>Our Works</h1>
     <div v-for="project in projects" :key="project.id" class="carousel-item">
       <div class="image-container" :status="project.status">
         <img :alt="project.name" :src="project.image">
@@ -40,5 +40,4 @@
   </div>
 </template>
 
-<style lang="scss">
-</style>
+<style lang="scss"></style>

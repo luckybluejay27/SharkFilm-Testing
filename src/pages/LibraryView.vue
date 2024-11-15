@@ -1,9 +1,7 @@
 <template>
   <PrimeNav />
   <Socials />
-  <div class="page">
-    Library
-  </div>
+  <div class="page">Library</div>
 </template>
 
 <script>

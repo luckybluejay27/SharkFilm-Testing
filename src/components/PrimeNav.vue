@@ -1,9 +1,12 @@
 <template>
   <div
-    :class="['PrimeNav', {
-      'prime-index': isPrimeIndex,
-      'fixed-nav': isPrimeStick
-    }]"
+    :class="[
+      'PrimeNav',
+      {
+        'prime-index': isPrimeIndex,
+        'fixed-nav': isPrimeStick,
+      },
+    ]"
   >
     <ul>
       <li v-for="route in routes" :key="route.name">

@@ -15,8 +15,17 @@
       <div class="contact-section">
         <h2>Contact Us</h2>
         <ul>
-          <li>Business Inquiries: <a href="mailto:TheAngelCave@gmail.com">TheAngelCave@gmail.com</a></li>
-          <li>Main Social: <a href="https://bsky.app/profile/jadecandy.bsky.social" target="_blank">@jadecandy.bsky.social</a></li>
+          <li>
+            Business Inquiries:
+            <a href="mailto:TheAngelCave@gmail.com">TheAngelCave@gmail.com</a>
+          </li>
+          <li>
+            Main Social:
+            <a
+              href="https://bsky.app/profile/jadecandy.bsky.social"
+              target="_blank"
+            >@jadecandy.bsky.social</a>
+          </li>
           <li>Legal: [Lawyer Contact]</li>
         </ul>
       </div>
@@ -30,5 +39,4 @@
   }
 </script>
 
-<style lang="scss">
-</style>
+<style lang="scss"></style>

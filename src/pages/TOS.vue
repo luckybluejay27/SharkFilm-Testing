@@ -1,12 +1,10 @@
 <template>
   <PrimeNav />
   <Socials />
-  <div class="page">
-    Tos
-  </div>
+  <div class="page">Tos</div>
 </template>
 
-  <script>
+<script>
   import PrimeNav from '@/components/PrimeNav.vue'
   import Socials from '@/components/Socials.vue'
 
@@ -15,8 +13,8 @@
     components: PrimeNav,
     Socials,
   }
-  </script>
+</script>
 
-  <style>
-  /* Your styles here */
-  </style>
+<style>
+/* Your styles here */
+</style>
