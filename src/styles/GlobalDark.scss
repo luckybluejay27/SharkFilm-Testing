@@ -123,6 +123,7 @@ body {
     }
 
     ul {
+      margin-left: 1vw;
       list-style: none;
       padding: 0;
       display: inline-flex;
@@ -178,7 +179,7 @@ body {
   // Socials
   .Socials {
     position: fixed;
-    top: 0;
+    top: -0.5vh;
     right: 0;
     z-index: 3;
 
@@ -422,6 +423,7 @@ body {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     color: var(--Table-Dark-Text);
     width: 28%;
+    font-weight: 700;
 
     h2 {
       font-family: 'Concert One', serif;
@@ -433,7 +435,7 @@ body {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding: 0 1em.5em;
+      padding: 0.5em 1em 0.5em 1em;
 
       .service {
         text-align: left; 
@@ -448,6 +450,15 @@ body {
       .price {
         font-family: Arial, sans-serif;
       }
+    }
+
+    .description {
+      color: var(--Table-Dark-Text);
+      font-size: 90%;
+      text-align: left;
+      width: 100%;
+      font-style: italic;
+      padding: 0.5em 0.5em 1em 0.5em;
     }
   }
 

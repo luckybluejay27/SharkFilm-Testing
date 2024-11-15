@@ -20,16 +20,21 @@
           <span class="dotted-line" />
           <span class="price">125 USD</span>
         </div>
+        <span class="description">Detailed sketch of full body.</span>
+
         <div class="price-line">
           <span class="service">Flat Color</span>
           <span class="dotted-line" />
           <span class="price">150 USD</span>
         </div>
+        <span class="description">Flat color illustration.</span>
+
         <div class="price-line">
           <span class="service">Shaded</span>
           <span class="dotted-line" />
           <span class="price">200 USD</span>
         </div>
+        <span class="description">Shaded for depth and detail.</span>
       </div>
 
       <!-- Half Body Card -->
@@ -40,16 +45,21 @@
           <span class="dotted-line" />
           <span class="price">100 USD</span>
         </div>
+        <span class="description">Half body sketch option.</span>
+
         <div class="price-line">
           <span class="service">Flat Color</span>
           <span class="dotted-line" />
           <span class="price">125 USD</span>
         </div>
+        <span class="description">Flat color for half body.</span>
+
         <div class="price-line">
           <span class="service">Shaded</span>
           <span class="dotted-line" />
           <span class="price">150 USD</span>
         </div>
+        <span class="description">Shaded for half body detail.</span>
       </div>
 
       <!-- Portrait Card -->
@@ -60,16 +70,21 @@
           <span class="dotted-line" />
           <span class="price">75 USD</span>
         </div>
+        <span class="description">Sketch of the character's face.</span>
+
         <div class="price-line">
           <span class="service">Flat Color</span>
           <span class="dotted-line" />
           <span class="price">100 USD</span>
         </div>
+        <span class="description">Flat color portrait option.</span>
+
         <div class="price-line">
           <span class="service">Shaded</span>
           <span class="dotted-line" />
           <span class="price">150 USD</span>
         </div>
+        <span class="description">Shaded for a realistic look.</span>
       </div>
     </div>
 
@@ -88,6 +103,7 @@
 </template>
 
 <script>
+
   export default {
     name: 'CommCards',
   }

@@ -1,5 +1,5 @@
 <template>
-  <div id="app" class="comtainer">
+  <div id="app" class="container">
     <router-view />
   </div>
   <h1 class="break-line" />
@@ -8,8 +8,8 @@
 
 <script>
   import BottomPanel from './components/BottomPanel.vue'
-  // import './styles/GlobalDark.css'
   import './styles/GlobalDark.scss'
+
   export default {
     name: 'App',
     components: {

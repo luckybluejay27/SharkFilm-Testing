@@ -14,6 +14,5 @@ declare module 'vue' {
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     Socials: typeof import('./components/Socials.vue')['default']
-    TOS: typeof import('./components/TOS.vue')['default']
   }
 }

@@ -24,5 +24,6 @@ declare module 'vue-router/auto-routes' {
     '/LoginView': RouteRecordInfo<'/LoginView', '/LoginView', Record<never, never>, Record<never, never>>,
     '/PortfolioView': RouteRecordInfo<'/PortfolioView', '/PortfolioView', Record<never, never>, Record<never, never>>,
     '/SupportView': RouteRecordInfo<'/SupportView', '/SupportView', Record<never, never>, Record<never, never>>,
+    '/TOS': RouteRecordInfo<'/TOS', '/TOS', Record<never, never>, Record<never, never>>,
   }
 }
