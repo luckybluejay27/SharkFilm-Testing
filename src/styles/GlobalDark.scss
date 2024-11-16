@@ -286,11 +286,16 @@ body {
   overflow-x: auto;
   overflow-y: hidden;
   white-space: nowrap;
-  width: fit-content;
+  width: 97vw;
   color: var(--TextDark);
   font-size: 120%;
   font-weight: 800;
   transform: translate(0, 10vh);
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  scrollbar-width: none;
 
   .carousel-item {
     display: inline-block;
@@ -347,19 +352,20 @@ body {
   font-family: "Concert One", serif;
   word-wrap: normal;
   height: fit-content;
-  padding-bottom: 1vh;
+  padding: 0 0 0 0;
   transform: translate(0, 10vh);
+  margin: 0 0 0 0;
 
   p {
     @media (max-aspect-ratio: 1/1) {
-      width: 100%;
+      width: 90%;
       height: auto;
-      margin: 0;
+      padding: 0 0 0 2em;
     }
     @media (min-aspect-ratio: 1/1) {
       width: 70vw;
       height: auto;
-      margin: 0 auto;
+      margin: 0 auto 0 0;
       transform: translate(-5vw, 0);
     }
     font-size: 2em;
