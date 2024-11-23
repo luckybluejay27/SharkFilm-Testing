@@ -8,11 +8,13 @@
       },
     ]"
   >
-    <ul>
-      <li v-for="route in routes" :key="route.name">
-        <router-link :to="route.path">{{ route.name }}</router-link>
-      </li>
-    </ul>
+    <div class="nav-wrapper">
+      <ul>
+        <li v-for="route in routes" :key="route.name">
+          <router-link :to="route.path">{{ route.name }}</router-link>
+        </li>
+      </ul>
+    </div>
   </div>
 </template>
 

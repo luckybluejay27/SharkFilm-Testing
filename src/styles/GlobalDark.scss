@@ -1,17 +1,19 @@
 /* SCSS Variables */
 :root {
-  --PageDark: #416969;
-  --SurfaceDark: #2c3d3d;
-  --Highlight-Dark: #014863;
-  --TitleColor: #141414;
-  --HeaderColor: #363636;
-  --TextDark: #ffffff;
-  --NoSurfaceText: #353535;
-  --LinkDark: #69cdff;
-  --Tables-Dark: #f5e8a1;
-  --SVG-Dark: #ffffff;
-  --Table-Dark-Text: black;
-  --CommCard-ViewPort-Height: 93vh;
+  --PageBG: #416969;
+  --PrimarySurf: #2c3d3d;
+  --AccentDark: #9b3a3a7e;
+  --TitleTxt: #141414;
+  --MainHeader: #363636;
+  --TxtPrimary: #ffffff;
+  --TxtSecondary: #353535;
+  --LinkHL: #69cdff;
+  --TableBG: #f5e8a1;
+  --SVGColor: #ffffff;
+  --TableTxt: black;
+  --CommCardH: 93vh;
+  --Border: black;
+  --PageBGCon: #6d7a79;
 }
 
 /* Font Imports */
@@ -32,19 +34,20 @@
   box-sizing: border-box;
 }
 
-body, html {
+body {
   font-family: "Concert One", sans-serif;
-  background-color: var(--PageDark);
-  color: var(--TextDark);
+  background-color: var(--PageBGCon);
+  color: var(--TxtPrimary);
 
-  margin: 5vh 0 0 0;
-  padding: 0 0 0 0;
+  padding:  0 0 0 0;
+  margin: 0 0 0 0;
   box-sizing: border-box;
 
   display: flexbox;
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: flex-start;
+  align-content: center;
 
   height: fit-content;
   width: 100%;
@@ -56,6 +59,20 @@ body, html {
   ul{
     text-decoration: none;
   }
+}
+
+.page {
+  background-color: var(--PageBG);
+  display: flexbox;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: center;
+
+  margin: 5vh 1vw 0 1vw;
+  padding: 0 0 0 0;
+  // bevel the corners
+  border-radius: 0.5rem;
 }
 
 // Shark Logo
@@ -70,8 +87,9 @@ body, html {
 .Socials {
   display: flex;
   position: fixed;
-  top: 0;
+  top: 0.5vh;
   right: 0;
+  z-index: 3;
 
   ul {
     list-style: none;
@@ -108,29 +126,193 @@ body, html {
   top: 0;
   height: 5vh;
   width: 100%;
-  background-color: var(--SurfaceDark);
+  background-color: var(--PrimarySurf);
 
   margin: 0 0 0 0;
   padding: 0 0 0 0;
 
-  font-family: 'Times New Roman', Times, serif;
+  font-family: 'Concert One',;
   font-size: 5vmin;
   list-style: none;
   text-align: left;
   align-items: center;
 
-
-  // 1% border black
-  border: 1px solid black;
+  z-index: 2;
 
   li, ul, .router-link, a {
     display: flex;
     padding: 0 1rem 0 1rem;
     text-decoration: none;
-    color: var(--TextDark);
+    color: var(--TxtPrimary);
     font-size: 98%;
     margin-top: -0.2vh;
-    width: 90%;
   }
-  
+  .nav-wrapper {
+    width: 79%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scrollbar-width: none;
+  }
 }
+
+// SharkSplash
+.SharkSplash {
+  position: absolute;
+  align-content: center;
+  top: 40%;
+  scale: 80%;
+  text-align: center;
+
+  h1 {
+    font-size: 400%;
+    margin: 2vh 0 0 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+// Carousel Promo
+.CarouselPromo {
+  margin: 95vh 0 0 1vw;
+
+  .carousel-container {
+    overflow-x: auto; 
+    white-space: nowrap; 
+    scrollbar-width: none; 
+    -ms-overflow-style: none;
+    
+    &::-webkit-scrollbar {
+      display: none; 
+    }
+  }
+
+  .carousel {
+    display: inline-flex; 
+  }
+
+  .carousel-item {
+    display: inline-block; 
+    text-align: center; 
+    
+  }
+
+  .image-container {
+    position: relative; 
+    height: auto; 
+    
+    img {
+      max-height: 40vh; 
+      width: auto;
+      margin: 0 1vw 0 1vw;
+    }
+
+    .status-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: red;
+      color: white; 
+      padding: 0.4em; 
+      font-weight: bold; 
+      opacity: 50%;
+    }
+  }
+  p {
+    font-size: 2em;
+  }
+}
+
+// Our Mission
+.OurMission {
+  max-width: 60%;
+  margin: 10vh 0 0 0;
+  line-height: 1.5;
+  padding: 1rem;
+
+  h1 {
+    text-align: left;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    font-size: 2rem;
+    text-align: justify;
+    color: var(--TxtPrimary);
+  }
+}
+
+// BottomPanel
+.BottomPanel {
+  background-color: var(--PrimarySurf);
+  color: var(--TxtPrimary);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  // small padding separates from page: 
+  padding: 2rem;
+
+  .bottom-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+
+    .advertise-section {
+      background-color: var(--AccentDark);
+      padding: 1rem;
+      border-radius: 8px;
+      width: 40%;
+      text-align: center;
+
+      .advertise-link {
+        text-decoration: none;
+        color: var(--TxtPrimary);
+
+        &:hover {
+          color: var(--LinkHL);
+        }
+      }
+
+      .advertise-content {
+        font-size: 1.2rem;
+        line-height: 1.6;
+        transition: transform 0.3s ease-in-out;
+
+        &:hover {
+          transform: scale(1.05);
+        }
+      }
+    }
+
+    .contact-section {
+      width: 55%;
+
+      h2 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+
+        li {
+          margin-bottom: 0.5rem;
+          font-size: 1rem;
+          line-height: 1.6;
+
+          a {
+            color: var(--LinkHL);
+            text-decoration: none;
+
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
