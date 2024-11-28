@@ -2,7 +2,7 @@
 :root {
   --PageBG: #416969;
   --PrimarySurf: #2c3d3d;
-  --AccentDark: #9b3a3a7e;
+  --AccentDark: #b2552a;
   --TitleTxt: #141414;
   --MainHeader: #363636;
   --TxtPrimary: #ffffff;
@@ -157,11 +157,11 @@ body {
 
 // SharkSplash
 .SharkSplash {
-  position: absolute;
+  position: relative;
   align-content: center;
-  top: 40%;
   scale: 80%;
   text-align: center;
+  padding: 33vh 0 40vh 0;
 
   h1 {
     font-size: 400%;
@@ -173,7 +173,8 @@ body {
 
 // Carousel Promo
 .CarouselPromo {
-  margin: 95vh 0 0 1vw;
+  position: relative;
+  padding: 0 0 0 0;
 
   .carousel-container {
     overflow-x: auto; 
@@ -224,10 +225,10 @@ body {
 
 // Our Mission
 .OurMission {
+  position: relative;
   max-width: 60%;
-  margin: 10vh 0 0 0;
-  line-height: 1.5;
-  padding: 1rem;
+  padding: 3vh 0 1vh 2rem;
+  
 
   h1 {
     text-align: left;
@@ -235,10 +236,16 @@ body {
   }
 
   p {
-    font-size: 2rem;
+    font-size: 200%;
     text-align: justify;
     color: var(--TxtPrimary);
   }
+}
+
+@media (orientation: portrait) {
+  .OurMission {
+    max-width: 90%;
+}
 }
 
 // BottomPanel
