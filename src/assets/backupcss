@@ -60,8 +60,8 @@ font-size: 4vh;
 
 }
 // Components
-// PrimeNav
-.PrimeNav {
+// MainNav
+.MainNav {
 font-family: 'ConcertOne', serif;
 background-color: var(--SurfaceDark);
 width: fit-content; // Changed from 100vw to fit-content

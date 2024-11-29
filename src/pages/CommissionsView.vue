@@ -1,18 +1,18 @@
 <template>
   <Socials />
-  <PrimeNav />
+  <MainNav />
   <!-- Seperator -->
   <CommCards />
 </template>
 
 <script>
-  import PrimeNav from '@/components/PrimeNav.vue'
+  import MainNav from '@/components/MainNav.vue'
   import Socials from '@/components/Socials.vue'
   import CommCards from '@/components/CommCards.vue'
 
   export default {
     name: 'CommissionsView',
-    components: PrimeNav,
+    components: MainNav,
     Socials,
     CommCards,
   }

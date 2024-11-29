@@ -1,6 +1,8 @@
 <template>
-  <PrimeNav :is-prime-index="true" :is-prime-stick="isSticky" />
-  <Socials />
+  <div class="fixed-top-bar">
+    <MainNav />
+    <Socials />
+  </div>
   <div class="page">
     <!-- Shark Splash -->
     <div class="SharkSplash">
@@ -21,37 +23,16 @@
 </template>
 
 <script>
-  import { onMounted, onUnmounted, ref } from 'vue'
-  import PrimeNav from '@/components/PrimeNav.vue'
+  import MainNav from '@/components/MainNav.vue'
   import CarouselPromo from '../components/CarouselPromo.vue'
   import Socials from '../components/Socials.vue'
 
   export default {
     name: 'Home',
     components: {
-      PrimeNav,
+      MainNav,
       CarouselPromo,
       Socials,
-    },
-    setup () {
-      const isSticky = ref(false)
-
-      const handleScroll = () => {
-        const navPosition = window.innerHeight - 50 // Adjust this value based on your nav height
-        isSticky.value = window.scrollY >= navPosition
-      }
-
-      onMounted(() => {
-        window.addEventListener('scroll', handleScroll)
-      })
-
-      onUnmounted(() => {
-        window.removeEventListener('scroll', handleScroll)
-      })
-
-      return {
-        isSticky,
-      }
     },
   }
 </script>

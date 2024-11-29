@@ -10,6 +10,7 @@ declare module 'vue' {
     BottomPanel: typeof import('./components/BottomPanel.vue')['default']
     CarouselPromo: typeof import('./components/CarouselPromo.vue')['default']
     CommCards: typeof import('./components/CommCards.vue')['default']
+    MainNav: typeof import('./components/MainNav.vue')['default']
     PrimeNav: typeof import('./components/PrimeNav.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']

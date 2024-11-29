@@ -1,16 +1,16 @@
 <template>
-  <PrimeNav />
+  <MainNav />
   <Socials />
   <div class="page">Login</div>
 </template>
 
 <script>
-  import PrimeNav from '@/components/PrimeNav.vue'
+  import MainNav from '@/components/MainNav.vue'
   import Socials from '@/components/Socials.vue'
 
   export default {
     name: 'LoginView',
-    components: PrimeNav,
+    components: MainNav,
     Socials,
   }
 </script>

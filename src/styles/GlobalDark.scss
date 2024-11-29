@@ -37,7 +37,6 @@
 body {
   font-family: "Concert One", sans-serif;
   background-color: var(--PageBG);
-  color: var(--TxtPrimary);
 
   padding:  0 0 0 0;
   margin: 0 0 0 0;
@@ -82,84 +81,11 @@ body {
   }
 }
 
-// Socials
-.Socials {
-  display: flex;
-  position: fixed;
-  top: 0.5vh;
-  right: 0;
-  z-index: 3;
+// Page Components
+  
 
-  ul {
-    list-style: none;
-    display: flex;
-    padding: 0;
-    margin: 0;
-    width: max(10%, 100px);
 
-    li {
-      margin: 0 0.5rem; 
-    }
-
-    img {
-      height: 4vh;
-      width: auto;
-      transition: box-shadow 0.3s ease; 
-
-      &:hover {
-        box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5); 
-      }
-    }
-  }
-}
-// Hamburger Collapse
-@media (max-aspect-ratio: 1/2) {
- .Socials {
-    display: none;
- }
-}
-
-// PrirmeNav 
-.PrimeNav, .prime-index, .fixed-nav {
-  position: fixed;
-  top: 0;
-  height: 5vh;
-  width: 100%;
-  background-color: var(--PrimarySurf);
-
-  margin: 0 0 0 0;
-  padding: 0 0 0 0;
-
-  font-family: 'Concert One',;
-  font-size: 5vmin;
-  list-style: none;
-  text-align: left;
-  align-items: center;
-
-  z-index: 2;
-
-  li, ul, .router-link, a {
-    display: flex;
-    padding: 0 1rem 0 1rem;
-    text-decoration: none;
-    color: var(--TxtPrimary);
-    font-size: 98%;
-    margin-top: -0.2vh;
-  }
-  .nav-wrapper {
-    width: 79%;
-    overflow-x: auto;
-    overflow-y: hidden;
-    scrollbar-width: none;
-  }
-}
-
-.prime-index {
-  background-color: transparent;
-  bottom: 0;
-}
-
-// SharkSplash
+  // SharkSplash
 .SharkSplash {
   position: relative;
   align-content: center;
