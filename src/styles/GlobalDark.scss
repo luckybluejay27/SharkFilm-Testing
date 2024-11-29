@@ -83,8 +83,55 @@ body {
 
 // Page Components
   //Fixed Top Bar
+  .fixed-top-bar {
+    border: 3px solid black;
+    
+    display: grid;
+    position: fixed;
   
+    height: 7vh;
+    width: 100vw; // Keep only one width definition
+    
+    overflow: hidden; // Prevent scrolling
+    
+    top: 0;
+  
+    grid-template-columns: 8fr 2fr;
+  
+    .MainNav {
+      grid-area: 1 / 1 / 2 / 2;
+      border: 1px solid black;
+      height: 100%; // Ensure it fits within the grid height
+      margin: 0; // Remove any margin
+      padding: 0; // Remove any padding
+    }
+  
+    .Socials {
+      grid-area: 1 / 2 / 2 / 3;
+      border: 1px solid black;
+      height: 100%;
+      width: auto;
+      margin: 0; // Remove any margin
+      padding: 0; // Remove any padding
 
+      ul {
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+      }
+      li {
+        max-width: 20%;
+      }
+      img {
+        max-width: 90%;
+        height: auto;
+      }
+    }
+  }
 
   // SharkSplash
 .SharkSplash {
