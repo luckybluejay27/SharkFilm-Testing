@@ -36,14 +36,14 @@
 
 body {
   font-family: "Concert One", sans-serif;
-  background-color: var(--PageBGCon);
+  background-color: var(--PageBG);
   color: var(--TxtPrimary);
 
   padding:  0 0 0 0;
   margin: 0 0 0 0;
   box-sizing: border-box;
 
-  display: flexbox;
+  display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: flex-start;
@@ -71,7 +71,6 @@ body {
 
   margin: 5vh 1vw 0 1vw;
   padding: 0 0 0 0;
-  // bevel the corners
   border-radius: 0.5rem;
 }
 
@@ -153,6 +152,11 @@ body {
     overflow-y: hidden;
     scrollbar-width: none;
   }
+}
+
+.prime-index {
+  background-color: transparent;
+  bottom: 0;
 }
 
 // SharkSplash
