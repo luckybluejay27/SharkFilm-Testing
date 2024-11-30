@@ -1,0 +1,1 @@
+import{_ as e,a}from"./MainNav-D1CYdZgX.js";import{_ as r,o as c,c as _,d as n,a as p,F as i}from"./index-Yz7XYA4r.js";const m={name:"LibraryView",components:e,Socials:a};function l(u,o,d,f,g,V){const s=e,t=a;return c(),_(i,null,[n(s),n(t),o[0]||(o[0]=p("div",{class:"page"},"Library",-1))],64)}const x=r(m,[["render",l]]);export{x as default};
