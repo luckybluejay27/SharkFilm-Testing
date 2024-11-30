@@ -1,5 +1,5 @@
 <template>
-  <div class="MainNav-Wrap">
+  <div class="MainNav">
     <ul>
       <li v-for="route in routes" :key="route.name">
         <router-link :to="route.path">{{ route.name }}</router-link>
