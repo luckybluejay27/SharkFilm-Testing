@@ -14,6 +14,7 @@
   --CommCardH: 93vh;
   --Border: black;
   --PageBGCon: #6d7a79;
+  --TopBarHeight: 6vh;
 }
 
 /* Font Imports */
@@ -52,7 +53,7 @@ body {
   width: 100%;
   
   img {
-    height: 50vh;
+    height: 90vh;
     width: auto;
   }
   ul{
@@ -83,123 +84,51 @@ body {
 
 // Page Components
   //Fixed Top Bar
-  .fixed-top-bar {
-    border: 3px solid black;
-    
+  .top-bar {
+    height: var(--TopBarHeight);
+    width: 99vw;
+    border: 1px solid #000;
+    overflow-x: auto;
+    overflow-y: auto;
     display: grid;
-    position: fixed;
-  
-    height: 7vh;
-    width: 100vw; // Keep only one width definition
-    
-    overflow: hidden; // Prevent scrolling
-    
-    top: 0;
-  
     grid-template-columns: 8fr 2fr;
-  
-    .MainNav {
-      grid-area: 1 / 1 / 2 / 2;
-      border: 1px solid black;
-      height: 100%; // Ensure it fits within the grid height
-      margin: 0; // Remove any margin
-      padding: 0; // Remove any padding
-    }
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    scrollbar-width: none;
   
     .Socials {
-      grid-area: 1 / 2 / 2 / 3;
-      border: 1px solid black;
-      height: 100%;
-      width: auto;
-      margin: 0; // Remove any margin
-      padding: 0; // Remove any padding
-
+      display: flex;
+      flex-direction: row-reverse;
+      height: var(--TopBarHeight);
+      align-items: flex-start;
+      justify-content: flex-start;
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      overflow-y: auto;
+      scrollbar-width: none;
+      border: thin black solid;
+  
       ul {
-        list-style: none;
         display: flex;
-        justify-content: space-around;
-        align-items: center;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
+        align-items: left;
+        justify-content: center;
+        text-decoration: none;
+        height: var(--TopBarHeight);
+        width: auto;
+        list-style: none;
       }
-      li {
-        max-width: 20%;
-      }
+  
       img {
-        max-width: 90%;
-        height: auto;
+        display: flex;
+        flex-direction: row;
+        height: var(--TopBarHeight);
+        width: auto;
+        vertical-align: middle;
       }
     }
   }
-
-  // SharkSplash
-.SharkSplash {
-  position: relative;
-  align-content: center;
-  scale: 80%;
-  text-align: center;
-  padding: 33vh 0 40vh 0;
-
-  h1 {
-    font-size: 400%;
-    margin: 2vh 0 0 0;
-    width: 100%;
-    height: 100%;
-  }
-}
-
-// Carousel Promo
-.CarouselPromo {
-  position: relative;
-  padding: 0 0 0 0;
-
-  .carousel-container {
-    overflow-x: auto; 
-    white-space: nowrap; 
-    scrollbar-width: none; 
-    -ms-overflow-style: none;
-    
-    &::-webkit-scrollbar {
-      display: none; 
-    }
-  }
-
-  .carousel {
-    display: inline-flex; 
-  }
-
-  .carousel-item {
-    display: inline-block; 
-    text-align: center; 
-    
-  }
-
-  .image-container {
-    position: relative; 
-    height: auto; 
-    
-    img {
-      max-height: 40vh; 
-      width: auto;
-      margin: 0 1vw 0 1vw;
-    }
-
-    .status-overlay {
-      position: absolute;
-      top: 0;
-      left: 0;
-      background-color: red;
-      color: white; 
-      padding: 0.4em; 
-      font-weight: bold; 
-      opacity: 50%;
-    }
-  }
-  p {
-    font-size: 2em;
-  }
-}
+  
 
 // Our Mission
 .OurMission {

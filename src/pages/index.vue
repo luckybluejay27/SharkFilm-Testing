@@ -1,5 +1,5 @@
 <template>
-  <div class="fixed-top-bar">
+  <div class="top-bar">
     <MainNav />
     <Socials />
   </div>
