@@ -1,0 +1,1 @@
+import{_ as c,h as e,i as s,o as _,c as p,d as o,a as r,F as i}from"./index-Dbc4L_0J.js";const l={name:"TOS",components:e,Socials:s};function m(u,n,d,f,g,S){const a=e,t=s;return _(),p(i,null,[o(a),o(t),n[0]||(n[0]=r("div",{class:"page"},"Tos",-1))],64)}const x=c(l,[["render",m]]);export{x as default};

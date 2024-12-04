@@ -1,0 +1,1 @@
+import{_ as c,h as o,i as a,o as r,c as _,d as e,a as i,F as p}from"./index-Dbc4L_0J.js";const l={name:"LibraryView",components:o,Socials:a};function m(u,n,d,f,g,V){const s=o,t=a;return r(),_(p,null,[e(s),e(t),n[0]||(n[0]=i("div",{class:"page"},"Library",-1))],64)}const b=c(l,[["render",m]]);export{b as default};

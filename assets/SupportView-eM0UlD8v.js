@@ -1,1 +1,0 @@
-import{_ as e,a as t}from"./MainNav-D1CYdZgX.js";import{_ as p,o as c,c as r,d as n,a as _,F as i}from"./index-Yz7XYA4r.js";const m={name:"SupportView",components:e,Socials:t};function u(l,o,d,f,S,g){const s=e,a=t;return c(),r(i,null,[n(s),n(a),o[0]||(o[0]=_("div",{class:"page"},"Support",-1))],64)}const x=p(m,[["render",u]]);export{x as default};
