@@ -35,8 +35,11 @@ body {
 }
 
 .page {
-    background-color: var(--PageBGCon);
+    margin-top: var(--TopBarHeight);
+    z-index: 1;
+    width: 98vw;
 }
+
 // .break-line is a horizontal span line separating content vertically
 .break-line {
     width: 100%;
@@ -58,6 +61,7 @@ body {
     background-color: var(--PrimarySurf);
     overflow: auto;
     scrollbar-width: none;
+    z-index: 3;
 
     .MainNav {
         display: flex;
@@ -82,6 +86,7 @@ body {
             li {
                 gap: 1em;
                 text-align: left;
+
                 a {
                     gap: 1em;
                     color: var(--TxtPrimary);
@@ -94,16 +99,21 @@ body {
     }
 
     .Socials {
+
         display: flex;
         grid: 2;
         height: var(--TopBarHeight);
         align-items: center;
         justify-content: flex-start;
-        flex-wrap: nowrap;
+        flex-wrap: wrap-reverse;
         overflow: scroll;
         scrollbar-width: none;
+        width: calc(auto + 1em);
+        height: var(--TopBarHeight);
+        z-index: 2;
 
-        ul, img {
+        ul,
+        img {
             display: flex;
             overflow: scroll;
             scrollbar-width: none;
@@ -111,24 +121,40 @@ body {
             justify-content: center;
             text-decoration: none;
             list-style: none;
-            width: 100%;
             height: var(--TopBarHeight);
 
             padding: 0 0 0 0;
             margin: 0 0 0 0;
+        }
+
+        img {
+            width: auto;
         }
     }
 }
 
 // BottomPanel
 .BottomPanel {
+    display: grid;
     position: relative;
-    top: 95vh;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+    // Always stay at bottom, not always visible just always beneath everything, with a min of 95vh from top
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: var(--BottomPanelHeight);
+    background-color: var(--BottomPanelColor);
+    z-index: 1;
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+    width: 100vw;
+    max-width: 100%;
+    overflow: auto;
     background-color: var(--PrimarySurf);
-    color: var(--TxtPrimary);
+    scrollbar-width: none;
+    z-index: 3;
+
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
 
     .bottom-container {
         width: 100%;
@@ -138,14 +164,17 @@ body {
 
         .advertise-section {
             width: 40%;
-            padding: 1rem;
+            padding: 0;
             text-align: center;
-            background-color: var(--AccentDark);
-            border-radius: 8px;
 
             .advertise-link {
                 color: var(--TxtPrimary);
                 text-decoration: none;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100%;
+                width: 100%;
 
                 &:hover {
                     color: var(--LinkHL);
@@ -155,7 +184,11 @@ body {
             .advertise-content {
                 font-size: 1.2rem;
                 line-height: 1.6;
-                transition: transform 0.3s ease-in-out;
+                transition: transform 0.2s ease-in-out;
+                background-color: var(--AccentDark);
+
+                padding: 5% 20% 5% 20%;
+                border-radius: 10%;
 
                 &:hover {
                     transform: scale(1.05);
@@ -169,11 +202,13 @@ body {
             h2 {
                 margin-bottom: 1rem;
                 font-size: 1.5rem;
+                color: var(--TxtPrimary);
             }
 
             ul {
                 padding: 0;
                 list-style: none;
+                color: var(--TxtPrimary);
 
                 li {
                     margin-bottom: 0.5rem;
@@ -192,4 +227,39 @@ body {
             }
         }
     }
+}
+
+// Index Elements
+// SharkSplash
+.SharkSplash {
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    padding: 40vh 0 33vh 0;
+
+    // Fully center horizontally
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+// CarouselPromo
+.CarouselPromo {
+    position: relative;
+    width: 100%;
+    height: fit-content;
+
+    img {
+        height: 20vh;
+    }
+
+    .carousel-container {
+        display: inline;
+    }
+}
+
+// Our Mission
+.OurMission {
+    position: relative;
 }
