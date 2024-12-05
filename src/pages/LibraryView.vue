@@ -1,20 +1,13 @@
 <template>
-  <MainNav />
-  <Socials />
-  <div class="page">Library</div>
+  <div class="breakline" />
+  <div class="page">LibraryView</div>
 </template>
 
 <script>
-  import MainNav from '@/components/MainNav.vue'
-  import Socials from '@/components/Socials.vue'
-
   export default {
     name: 'LibraryView',
-    components: MainNav,
-    Socials,
   }
 </script>
 
 <style>
-/* Your styles here */
 </style>

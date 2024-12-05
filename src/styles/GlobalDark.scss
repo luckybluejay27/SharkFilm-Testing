@@ -137,7 +137,6 @@ body {
 .BottomPanel {
     display: grid;
     position: relative;
-    // Always stay at bottom, not always visible just always beneath everything, with a min of 95vh from top
     bottom: 0;
     left: 0;
     right: 0;
