@@ -32,12 +32,16 @@
 body {
     background-color: var(--PageBG);
     font-family: "Concert One", sans-serif;
+
+    p {
+        width: 99%;
+    }
 }
 
 .page {
     margin-top: var(--TopBarHeight);
     z-index: 1;
-    width: 98vw;
+    width: 97vw;
 }
 
 // .break-line is a horizontal span line separating content vertically
