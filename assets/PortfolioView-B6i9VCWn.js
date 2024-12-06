@@ -1,1 +1,0 @@
-import{_ as c,h as e,i as s,o as _,c as r,d as n,a as i,F as p}from"./index-Dbc4L_0J.js";const l={name:"PortfolioView",components:e,Socials:s};function m(f,o,u,d,g,V){const t=e,a=s;return _(),r(p,null,[n(t),n(a),o[0]||(o[0]=i("div",{class:"page"},"Portfolio",-1))],64)}const x=c(l,[["render",m]]);export{x as default};

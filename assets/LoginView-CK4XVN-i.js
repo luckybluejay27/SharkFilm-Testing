@@ -1,1 +1,0 @@
-import{_ as c,h as e,i as s,o as _,c as i,d as o,a as p,F as r}from"./index-Dbc4L_0J.js";const l={name:"LoginView",components:e,Socials:s};function m(u,n,d,g,f,V){const a=e,t=s;return _(),i(r,null,[o(a),o(t),n[0]||(n[0]=p("div",{class:"page"},"Login",-1))],64)}const x=c(l,[["render",m]]);export{x as default};
