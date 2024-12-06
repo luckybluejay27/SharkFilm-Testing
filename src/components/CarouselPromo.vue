@@ -4,11 +4,13 @@
     <div class="carousel-container">
       <div class="carousel-wrapper">
         <div v-for="project in projects" :key="project.id" class="carousel-item">
-          <img :alt="project.name" class="project-image" :src="project.image" :status="project.status">
-          <div v-if="project.status === 'in-progress'" class="status-overlay">
-            IN PROGRESS
+          <div class="image-container">
+            <img :alt="project.name" class="project-image" :src="project.image">
+            <div v-if="project.status === 'in-progress'" class="status-overlay">
+              IN PROGRESS
+            </div>
           </div>
-          <p>{{ project.name }}</p>
+          <p class="project-title">{{ project.name }}</p>
         </div>
       </div>
     </div>

@@ -29,19 +29,24 @@
 }
 
 // Page Outline
-body {
+body,
+.container,
+.page {
     background-color: var(--PageBG);
     font-family: "Concert One", sans-serif;
+    max-width: 100vw;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
 
     p {
-        width: 99%;
+        width: 95%;
     }
 }
 
 .page {
     margin-top: var(--TopBarHeight);
     z-index: 1;
-    width: 97vw;
+    margin: 0 1vw 0 1vw;
 }
 
 // .break-line is a horizontal span line separating content vertically
@@ -142,9 +147,10 @@ body {
 
 // BottomPanel
 .BottomPanel {
+    white-space: nowrap;
     display: grid;
     position: relative;
-    bottom: 0;
+    bottom: -1vh;
     left: 0;
     right: 0;
     height: var(--BottomPanelHeight);
@@ -156,8 +162,9 @@ body {
     max-width: 100%;
     overflow: auto;
     background-color: var(--PrimarySurf);
-    scrollbar-width: none;
+    scrollbar-width: thin;
     z-index: 3;
+    transform-origin: left;
 
     padding: 0 0 0 0;
     margin: 0 0 0 0;
@@ -253,19 +260,72 @@ body {
 // CarouselPromo
 .CarouselPromo {
     position: relative;
-    width: 100%;
-    height: fit-content;
+    overflow-x: auto; // Allow horizontal scrolling
+    padding: 0 0 0 0;
+    margin: 7vh 0 2vh 0;
+    scrollbar-width: none;
 
-    img {
-        height: 20vh;
+    h1 {
+        font-size: 2.5rem;
+        padding: 0;
+        margin: 0 0 2vh 0;
     }
 
     .carousel-container {
-        display: inline;
+        display: flex;
+        width: 100vw;
+        scrollbar-width: none;
+
+        .carousel-wrapper {
+            display: flex;
+
+            .carousel-item {
+                min-width: 10%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+                margin: 0 1em 0 1em;
+
+                .image-container {
+                    position: relative;
+                    width: 100%;
+
+                    img {
+                        max-height: 30vh;
+                        width: auto;
+                        height: auto;
+                        object-fit: contain;
+                    }
+
+                    .status-overlay {
+                        position: absolute;
+                        top: 50%;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                        background-color: rgba(255, 0, 0, 0.5);
+                        color: white;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 40%;
+                        height: 10%;
+                    }
+                }
+
+                .project-title {
+                    text-align: center;
+                    font-size: 150%;
+                }
+            }
+        }
     }
 }
 
 // Our Mission
 .OurMission {
     position: relative;
+    padding: 0 0 0 0;
+    margin: 2vh 0 24vh 0;
 }
