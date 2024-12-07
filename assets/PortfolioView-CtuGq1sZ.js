@@ -1,0 +1,1 @@
+import{_ as s,o as t,c as r,a as e,F as a}from"./index-DahGYr9L.js";const n={name:"PortfolioView"};function l(i,o,f,p,c,d){return t(),r(a,null,[o[0]||(o[0]=e("div",{class:"breakline"},null,-1)),o[1]||(o[1]=e("div",{class:"page"},"PortfolioView",-1))],64)}const u=s(n,[["render",l]]);export{u as default};
