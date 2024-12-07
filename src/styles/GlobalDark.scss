@@ -1,15 +1,15 @@
 /* SCSS Variables */
 :root {
-    --PageBG: #416969;
-    --PageBGCon: #6d7a79;
-    --PrimarySurf: #2c3d3d;
-    --AccentDark: #b2552a;
-    --TitleTxt: #141414;
+    --PageBG: #416969; //*
+    --PageBGCon: #4B8B8B;
+    --PrimarySurf: #2c3d3d; //*
+    --AccentDark: #FF6F61;
+    --TitleTxt: #2E2E2E;
     --MainHeader: #363636;
-    --TxtPrimary: #ffffff;
-    --TxtSecondary: #353535;
+    --TxtPrimary: #F5FFFA;
+    --TxtSecondary: #353535; //*
     --LinkHL: #69cdff;
-    --TableBG: #f5e8a1;
+    --TableBG: #FFE4B5;
     --TableTxt: black;
     --SVGColor: #ffffff;
     --CommCardH: 93vh;
@@ -34,6 +34,7 @@ body,
 .page {
     background-color: var(--PageBG);
     font-family: "Concert One", sans-serif;
+    color: var(--TxtPrimary);
     max-width: 100vw;
     margin: 0 0 0 0;
     padding: 0 0 0 0;
@@ -163,7 +164,7 @@ body,
     overflow: auto;
     background-color: var(--PrimarySurf);
     scrollbar-width: thin;
-    z-index: 3;
+    z-index: 2;
     transform-origin: left;
 
     padding: 0 0 0 0;
@@ -199,6 +200,7 @@ body,
                 line-height: 1.6;
                 transition: transform 0.2s ease-in-out;
                 background-color: var(--AccentDark);
+                color: var(--TxtSecondary);
 
                 padding: 5% 20% 5% 20%;
                 border-radius: 10%;
@@ -248,7 +250,7 @@ body,
     position: relative;
     width: 100%;
     height: fit-content;
-    padding: 40vh 0 33vh 0;
+    padding: 45vh 0 33vh 0;
 
     // Fully center horizontally
     display: flex;
@@ -260,10 +262,8 @@ body,
 // CarouselPromo
 .CarouselPromo {
     position: relative;
-    overflow-x: auto; // Allow horizontal scrolling
     padding: 0 0 0 0;
-    margin: 7vh 0 2vh 0;
-    scrollbar-width: none;
+    margin: 10vh 0 0vh 0;
 
     h1 {
         font-size: 2.5rem;
@@ -273,8 +273,9 @@ body,
 
     .carousel-container {
         display: flex;
-        width: 100vw;
-        scrollbar-width: none;
+        width: 90vw;
+        overflow-x: auto;
+        scrollbar-width: thin;
 
         .carousel-wrapper {
             display: flex;
@@ -325,7 +326,20 @@ body,
 
 // Our Mission
 .OurMission {
-    position: relative;
-    padding: 0 0 0 0;
-    margin: 2vh 0 24vh 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2rem;
+    max-width: 100%;
+    box-sizing: border-box;
+
+    margin: 11vh 0 11vh 0;
+
+    p {
+        text-align: center;
+        max-width: 90%;
+        width: 100%;
+        margin: 0 0 0 0;
+        font-size: 3vw;
+    }
 }

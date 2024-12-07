@@ -9,10 +9,8 @@
     <CarouselPromo />
     <!-- Our Mission -->
     <div class="OurMission">
-      <h1>Our Mission</h1>
       <p>
-        To empower creation without external pressure, fostering an environment
-        free from convention. Through collaboration, we support each other.
+        Empower Creativity, Fund Ingenuity, Shape Tomorrow
       </p>
     </div>
   </div>
