@@ -1,5 +1,5 @@
 <template>
-  <div class="breakline" />
+  <div class="break-line"></div>
   <div class="page">LibraryView</div>
 </template>
 

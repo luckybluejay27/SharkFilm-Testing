@@ -1,6 +1,6 @@
 <template>
-  <div class="breakline" />
-  <div class="page">SupportView</div>
+  <div class="break-line"></div>
+    <div class="page">SupportView</div>
 </template>
 
 <script>

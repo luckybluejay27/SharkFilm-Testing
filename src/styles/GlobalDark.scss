@@ -48,13 +48,14 @@ body,
     margin-top: var(--TopBarHeight);
     z-index: 1;
     margin: 0 1vw 0 1vw;
+    font-size: 200%;
 }
 
 // .break-line is a horizontal span line separating content vertically
 .break-line {
     width: 100%;
-    height: 1px;
-    background-color: var(--PrimarySurf);
+    height: 5vh;
+    background-color: var(--PageBG);
     margin: 0 auto;
 }
 
@@ -66,7 +67,7 @@ body,
     top: 0;
     left: 0;
     height: var(--TopBarHeight);
-    width: 99vw;
+    width: 100vw;
     grid-template-columns: 7fr 1fr;
     background-color: var(--PrimarySurf);
     overflow: auto;
@@ -257,6 +258,14 @@ body,
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
+    img {
+        scale: 120%;
+    }
+
+    h1 {
+        font-size: 120%;
+    }
 }
 
 // CarouselPromo
@@ -333,7 +342,7 @@ body,
     max-width: 100%;
     box-sizing: border-box;
 
-    margin: 11vh 0 11vh 0;
+    margin: 2vh 0 5vh 0;
 
     p {
         text-align: center;

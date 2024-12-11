@@ -1,32 +1,32 @@
 <template>
-  <!-- Navbar -->
-  <div class="TopPanel">
+    <!-- Navbar -->
+    <div class="TopPanel">
     <MainNav />
     <Socials />
-  </div>
+    </div>
   <!-- Content -->
-  <div id="app" class="container">
-    <router-view />
-  </div>
+    <div id="app" class="container">
+      <router-view />
+    </div>
   <!-- Footer -->
-  <h1 class="break-line" />
-  <BottomPanel />
+    <div class="break-line"></div>
+    <BottomPanel />
 </template>
 
 <script>
-  import BottomPanel from './components/BottomPanel.vue'
-  import MainNav from './components/MainNav.vue'
-  import Socials from './components/Socials.vue'
-  import './styles/GlobalDark.scss'
+import BottomPanel from './components/BottomPanel.vue'
+import MainNav from './components/MainNav.vue'
+import Socials from './components/Socials.vue'
+import './styles/GlobalDark.scss'
 
-  export default {
-    name: 'App',
-    components: {
-      BottomPanel,
-      MainNav,
-      Socials,
-    },
-  }
+export default {
+  name: 'App',
+  components: {
+    BottomPanel,
+    MainNav,
+    Socials,
+  },
+}
 </script>
 
 <style></style>

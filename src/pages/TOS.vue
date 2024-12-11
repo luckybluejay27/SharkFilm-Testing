@@ -1,13 +1,12 @@
 <template>
-  <div class="breakline" />
-  <div class="page">TOS</div>
+  <div class="break-line"></div>
+    <div class="page">TOS</div>
 </template>
 
 <script>
-  export default {
-    name: 'TOS',
-  }
+export default {
+  name: 'TOS',
+}
 </script>
 
-<style>
-</style>
+<style></style>

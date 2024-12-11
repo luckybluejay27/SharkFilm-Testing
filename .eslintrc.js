@@ -7,14 +7,18 @@
 module.exports = {
   root: true,
   env: {
+    browser: true,
     node: true,
   },
   extends: [
-    'vuetify',
-    '@vue/eslint-config-typescript',
-    './.eslintrc-auto-import.json',
+    '@nuxtjs/eslint-config-typescript',
+    'plugin:nuxt/recommended',
+    'prettier',
   ],
+  plugins: [],
+  // add your custom rules here
   rules: {
     'vue/multi-word-component-names': 'off',
   },
 }
+
