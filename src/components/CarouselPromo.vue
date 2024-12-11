@@ -1,6 +1,7 @@
 <template>
   <div class="CarouselPromo">
     <h1>Our Works</h1>
+    <div class="break-line"></div>
     <div class="carousel-container">
       <div class="carousel-wrapper">
         <div v-for="project in projects" :key="project.id" class="carousel-item">
