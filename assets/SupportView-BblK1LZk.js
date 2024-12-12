@@ -1,0 +1,1 @@
+import{_ as t,o,c as r,a as s,F as a}from"./index-C5RszmGW.js";const n={name:"SupportView"};function p(l,e,i,u,c,d){return o(),r(a,null,[e[0]||(e[0]=s("div",{class:"break-line"},null,-1)),e[1]||(e[1]=s("div",{class:"page"},"SupportView",-1))],64)}const m=t(n,[["render",p]]);export{m as default};

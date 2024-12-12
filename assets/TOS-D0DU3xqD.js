@@ -1,1 +1,0 @@
-import{_ as a,o as n,c as t,a as s,F as o}from"./index-CrhNUwCA.js";const r={name:"TOS"};function l(p,e,c,d,i,f){return n(),t(o,null,[e[0]||(e[0]=s("div",{class:"break-line"},null,-1)),e[1]||(e[1]=s("div",{class:"page"},"TOS",-1))],64)}const u=a(r,[["render",l]]);export{u as default};
