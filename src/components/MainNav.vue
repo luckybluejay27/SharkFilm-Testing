@@ -1,5 +1,5 @@
 <template>
-  <div class="MainNav">
+    <div :class="['MainNav', { 'MainNavIndex': isIndexPage }]">
     <ul>
       <li v-for="route in routes" :key="route.name">
         <router-link :to="route.path">{{ route.name }}</router-link>
@@ -11,6 +11,12 @@
 <script>
   export default {
     name: 'MainNav',
+    props: {
+      isIndexPage: {
+        type: Boolean,
+        default: false,
+      },
+    },
 
     data () {
       return {

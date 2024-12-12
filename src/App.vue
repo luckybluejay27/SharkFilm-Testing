@@ -1,7 +1,7 @@
 <template>
     <!-- Navbar -->
     <div class="TopPanel">
-    <MainNav />
+      <MainNav :is-index-page="isIndexPage" />
     <Socials />
     </div>
   <!-- Content -->
@@ -26,6 +26,17 @@ export default {
     MainNav,
     Socials,
   },
+
+  data() {
+    return {
+      isIndexPage: false,
+    };
+  },
+  mounted() {
+    if (this.$route.name === 'index') {
+      this.isIndexPage = true;
+    }
+  }
 }
 </script>
 

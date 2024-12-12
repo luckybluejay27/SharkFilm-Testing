@@ -74,6 +74,10 @@ body,
     scrollbar-width: none;
     z-index: 3;
 
+    .MainNavIndex {
+        background-color: transparent;
+      }
+
     .MainNav {
         display: flex;
         grid: 1;
@@ -146,12 +150,6 @@ body,
         }
     }
 }
-
-.MainNav--index {
-    /* Add styles specific to the index variant of MainNav */
-    background-color: var(--AccentDark);
-    color: var(--TxtSecondary);
-  }
 
 // BottomPanel
 .BottomPanel {
