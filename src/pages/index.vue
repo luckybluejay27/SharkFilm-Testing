@@ -7,6 +7,7 @@
     </div>
     <!-- Carousel -->
     <CarouselPromo />
+    <h2>Hello World</h2>
     <!-- Our Mission -->
     <div class="OurMission">
       <p>
