@@ -1,0 +1,1 @@
+import{_ as s,o,c as a,a as n,F as t}from"./index-C5RszmGW.js";const r={name:"LoginView"};function i(l,e,p,c,d,f){return o(),a(t,null,[e[0]||(e[0]=n("div",{class:"break-line"},null,-1)),e[1]||(e[1]=n("div",{class:"page"},"LoginView",-1))],64)}const u=s(r,[["render",i]]);export{u as default};
