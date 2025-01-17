@@ -1,9 +1,6 @@
 <template>
     <!-- Navbar -->
-    <div class="TopPanel">
-    <MainNav />
-    <Socials />
-    </div>
+    <TopPanel />
   <!-- Content -->
     <div id="app" class="container">
       <router-view />
@@ -14,17 +11,15 @@
 </template>
 
 <script>
+import TopPanel from './components/TopPanel.vue'
 import BottomPanel from './components/BottomPanel.vue'
-import MainNav from './components/MainNav.vue'
-import Socials from './components/Socials.vue'
 import './styles/GlobalDark.scss'
 
 export default {
   name: 'App',
   components: {
     BottomPanel,
-    MainNav,
-    Socials,
+    TopPanel,
   },
 }
 </script>
