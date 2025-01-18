@@ -1,13 +1,13 @@
 <template>
-    <!-- Navbar -->
-    <TopPanel />
+  <!-- Navbar -->
+  <TopPanel  />
   <!-- Content -->
-    <div id="app" class="container">
-      <router-view />
-    </div>
+  <div id="app" class="container">
+    <router-view />
+  </div>
   <!-- Footer -->
-    <div class="break-line"></div>
-    <BottomPanel />
+  <div class="break-line"></div>
+  <BottomPanel />
 </template>
 
 <script>
@@ -23,5 +23,3 @@ export default {
   },
 }
 </script>
-
-<style></style>

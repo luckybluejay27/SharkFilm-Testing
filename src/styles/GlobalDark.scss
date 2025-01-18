@@ -146,6 +146,90 @@ body,
     }
 }
 
+.TopPanelHomeVar {
+    display: grid;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: var(--TopBarHeight);
+    width: 100vw;
+    grid-template-columns: 7fr 1fr;
+    background-color: black;
+    scrollbar-width: none;
+    z-index: 3;
+
+    .MainNav {
+        display: flex;
+        grid: 1;
+        height: var(--TopBarHeight);
+        width: auto;
+        align-items: center;
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+        scrollbar-width: none;
+        overflow-x: scroll;
+        overflow-y: hidden;
+
+        ul {
+            display: flex;
+            scrollbar-width: none;
+            align-items: center;
+            list-style: none;
+            width: 100%;
+            height: var(--TopBarHeight);
+            li {
+                gap: 1em;
+                text-align: left;
+                
+
+                a {
+                    gap: 1em;
+                    color: var(--TxtPrimary);
+                    padding: 0 0.5em;
+                    font-size: 4vh;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
+    .Socials {
+
+        display: flex;
+        grid: 2;
+        height: var(--TopBarHeight);
+        align-items: center;
+        justify-content: flex-end;
+        text-wrap: wrap;
+        flex-wrap: wrap-reverse;
+        overflow: scroll;
+        scrollbar-width: none;
+        width: calc(auto + 1em);
+        height: var(--TopBarHeight);
+        z-index: 2;
+
+        ul,
+        img {
+            display: flex;
+            overflow: scroll;
+            scrollbar-width: none;
+            align-items: center;
+            justify-content: start;
+            text-decoration: none;
+            list-style: none;
+            height: var(--TopBarHeight);
+
+            padding: 0 0 0 0;
+            margin: 0 0 0 0;
+
+            text-wrap: wrap;
+        }
+
+        img {
+            width: auto;
+        }
+    }
+}
 
 // BottomPanel
 .BottomPanel {
