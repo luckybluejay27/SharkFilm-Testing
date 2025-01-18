@@ -70,7 +70,6 @@ body,
     width: 100vw;
     grid-template-columns: 7fr 1fr;
     background-color: var(--PrimarySurf);
-    overflow: auto;
     scrollbar-width: none;
     z-index: 3;
 
@@ -82,21 +81,21 @@ body,
         align-items: center;
         justify-content: flex-start;
         flex-wrap: nowrap;
-        overflow: scroll;
         scrollbar-width: none;
+        overflow-x: scroll;
+        overflow-y: hidden;
 
         ul {
             display: flex;
-            overflow: scroll;
             scrollbar-width: none;
             align-items: center;
             list-style: none;
             width: 100%;
             height: var(--TopBarHeight);
-
             li {
                 gap: 1em;
                 text-align: left;
+                
 
                 a {
                     gap: 1em;
