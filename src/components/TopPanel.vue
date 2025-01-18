@@ -1,5 +1,5 @@
 <template>
-    <div class="TopPanel">
+     <div :class="panelClass">
         <div class="MainNav">
             <ul>
                 <li v-for="route in routes" :key="route.name">
@@ -37,6 +37,12 @@
 <script>
 export default {
     name: 'TopPanel',
+    props: {
+        panelClass: {
+            type: String,
+            default: 'TopPanel'
+        }
+    },
     data() {
         return {
             routes: [

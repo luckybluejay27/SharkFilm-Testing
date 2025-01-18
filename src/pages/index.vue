@@ -17,12 +17,12 @@
 </template>
 
 <script>
-  import CarouselPromo from '../components/CarouselPromo.vue'
+import CarouselPromo from '../components/CarouselPromo.vue'
 
-  export default {
-    name: 'Home',
-    components: {
-      CarouselPromo,
-    },
-  }
+export default {
+  name: 'Home',
+  components: {
+    CarouselPromo,
+  },
+}
 </script>

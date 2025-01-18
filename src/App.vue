@@ -1,6 +1,6 @@
 <template>
   <!-- Navbar -->
-  <TopPanel  />
+  <TopPanel :panelClass="topPanelClass" />
   <!-- Content -->
   <div id="app" class="container">
     <router-view />
@@ -21,5 +21,10 @@ export default {
     BottomPanel,
     TopPanel,
   },
+  computed: {
+    topPanelClass() {
+      return this.$route.path === '/' ? 'TopPanelHomeVar' : 'TopPanel';
+    }
+  }
 }
 </script>
